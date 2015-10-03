@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'bootcamps/index'
+
+  get 'bootcamps/new'
+
+  get 'bootcamps/create'
+
+  get 'bootcamps/show'
+
+  get 'bootcamps/edit'
+
+  get 'bootcamps/update'
+
+  get 'bootcamps/destroy'
+
   get 'users/index'
 
   get 'users/new'
