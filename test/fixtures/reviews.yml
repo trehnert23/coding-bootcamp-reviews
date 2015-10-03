@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  body: MyText
+  user_id: 1
+  instructor_id: 1
+  bootcamp_id: 1
+  hotness: 1
+  approachable: 1
+  knowledge: 1
+  organization: 1
+  campus: 1
+  price: 1
+  placement: 1
+  location: 1
+  instructors: 1
+
+two:
+  body: MyText
+  user_id: 1
+  instructor_id: 1
+  bootcamp_id: 1
+  hotness: 1
+  approachable: 1
+  knowledge: 1
+  organization: 1
+  campus: 1
+  price: 1
+  placement: 1
+  location: 1
+  instructors: 1
