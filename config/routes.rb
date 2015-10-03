@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'isntructors/index'
+
+  get 'isntructors/new'
+
+  get 'isntructors/create'
+
+  get 'isntructors/show'
+
+  get 'isntructors/edit'
+
+  get 'isntructors/update'
+
+  get 'isntructors/destroy'
+
   get 'bootcamps/index'
 
   get 'bootcamps/new'
