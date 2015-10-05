@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  campus: 1
+  worthit: MyString
+  location: 1
+  jobhelp: 1
+
+two:
+  content: MyText
+  campus: 1
+  worthit: MyString
+  location: 1
+  jobhelp: 1
