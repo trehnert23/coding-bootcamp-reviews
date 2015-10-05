@@ -4,26 +4,37 @@
 <body>
     <%= render 'partials/nav_home' %>
     <h1>There are <%= @users.length %> users signed up!</h1>
-    <%= text_field_tag 'home-search', nil, placeholder: 'Search ... ' %>
+    <!-- <%= text_field_tag 'home-search', nil, placeholder: 'Search ... ' %> -->
 
-    <div id="signup-modal" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h4 class="modal-title">Sign-Up</h4>
-          </div>
-          <div class="modal-body">
-          	<div class="signup-wrapper">
-          		 <%= form_for @user do |f| %>
-            <%= f.email_field :email, class: "new-user-form", placeholder: 'email123@domain.com' %>
-            <%= f.text_field :username, class: "new-user-form", placeholder: 'username' %>
-            <%= f.password_field :password, class: "new-user-form", placeholder: 'password' %>
-            <%= f.submit 'Sign Up', id: "signup-button", class: 'btn btn-default text-center'%>
-            <% end %>
-          	</div>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+    <%= form_tag instructors_path, :method => 'get' do %>
+
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+        <% end %>
+
+
+
+<!-- <a data-toggle="modal" href="#signup-modal" class="btn btn-default">Sign Up</a> -->
+
+<div id="signup-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Sign-Up</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="signup-wrapper">
+      		 <%= form_for @user do |f| %>
+        <%= f.email_field :email, class: "new-user-form", placeholder: 'email123@domain.com' %>
+        <%= f.text_field :username, class: "new-user-form", placeholder: 'username' %>
+        <%= f.password_field :password, class: "new-user-form", placeholder: 'password' %>
+        <%= f.submit 'Sign Up', id: "signup-button", class: 'btn btn-default text-center'%>
+        <% end %>
+      	</div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 </body>
