@@ -99,14 +99,13 @@
 /*----------------------------------------------*/
 .navbar .navbar-custom .navbar-fixed-top {
   z-index: 99999;
-  border: transparent;
 }
 
 
-.navbar-custom .navbar-brand {
+.navbar-brand {
   margin-left: 20px;
   font-size: 30px;
-  color: white;
+  color: red;
   background-color: transparent;
   border: transparent;
   font-family: Lobster;
@@ -125,25 +124,6 @@
 .navbar-custom .navbar-nav > a:hover {
   color: rgba(84,84,84,1);
   outline: none;
-}
-
-#home_link:hover {
-  color: rgba(84,84,84,1);
-}
-
-.btn {
-	background-color: transparent;
-	border: transparent;
-	margin-top: 1%;
-	color: white;
-	font-family: Lobster;
-	font-size: 22px;
-	outline: none;
-}
-
-.btn:hover {
-	color: rgba(84,84,84,1);
-  	outline: none;
 }
 
 
