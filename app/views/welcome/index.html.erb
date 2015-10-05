@@ -1,4 +1,7 @@
+<%= render 'partials/nav_home' %>
+
 <h1>There are <%= @users.length %> users signed up!</h1>
+
 <%= text_field_tag 'home-search', nil, placeholder: 'Search ... ' %>
 
 <a data-toggle="modal" href="#signup-modal" class="btn btn-default">Sign Up</a>
