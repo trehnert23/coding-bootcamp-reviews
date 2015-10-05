@@ -1,6 +1,6 @@
 class Instructor < ActiveRecord::Base
 
-	has_many :reviews
+	has_many :instructor_reviews
 	belongs_to :bootcamp
 
 end

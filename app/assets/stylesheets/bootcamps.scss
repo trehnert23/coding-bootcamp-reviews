@@ -46,7 +46,6 @@
 
 #home {
   background-color: rgba(0,0,0,0.8);
-  margin-top: -60px;
 }
 
 #slide1 {
@@ -91,6 +90,7 @@
 /*----------------------------------------------*/
 .navbar .navbar-custom .navbar-fixed-top {
   z-index: 99999;
+  border: transparent;
 }
 
 
@@ -140,8 +140,7 @@
   color: rgba(84,84,84,1);
 }
 
-.navbar-custom .navbar-right {
-  margin-right: 20px;
+.nav .navbar-nav .navbar-right {
 }
 
 

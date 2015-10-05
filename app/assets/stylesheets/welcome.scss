@@ -1,6 +1,3 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 .signup-wrapper {
 	width: 200px;
 	margin-left: auto;
@@ -19,4 +16,132 @@
 	width: 200px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+/*----------------------------------------------*/
+              /*slide rolling effect*/
+/*----------------------------------------------*/
+
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  z-index: -2;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  z-index: 99999;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+#home {
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    animation: fadein 4s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#home {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#slide1 {
+  background-color: #7EC0EE;
+}
+
+#slide1:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: -webkit-radial-gradient(top left, ellipse cover, rgba(255,255,255,0) 10%,rgba(0,0,0,1) 100%);
+}
+
+#slide2 {
+  background-image: url('http://www.wallideas.net/wp-content/uploads/2015/03/Dark-Grey-Background-Photo-HD-Wallpaper-2nwk9-Free.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+}
+
+#slide3 {
+  background-image: url('https://images.unsplash.com/photo-1415348667647-9e035495cfb7?q=80&fm=jpg&s=46079afff661050b721a7923ac0bab19');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+}
+
+#slide4 {
+  background-image: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&fm=jpg&s=eb2a21cc0655327e3295d3426e805607');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+}
+
+
+/*----------------------------------------------*/
+                    /*navbar*/
+/*----------------------------------------------*/
+.navbar .navbar-custom .navbar-fixed-top {
+  z-index: 99999;
+}
+
+
+.navbar-brand {
+  margin-left: 20px;
+  font-size: 30px;
+  color: red;
+  background-color: transparent;
+  border: transparent;
+  font-family: Lobster;
+}
+
+.navbar-custom .navbar-nav > a {
+  background-color: transparent;
+  border: transparent;
+  margin-top: 1%;
+  color: white;
+  font-family: Lobster;
+  font-size: 22px;
+  outline: none;
+}
+
+.navbar-custom .navbar-nav > a:hover {
+  color: rgba(84,84,84,1);
+  outline: none;
+}
+
+
+/*----------------------------------------------*/
+             /*home page formatting*/
+/*----------------------------------------------*/
+
+
+.ga_logo {
+  margin-left: 10%;
+  margin-top: -7%;
+  z-index: -1;
+}
+
+.ga_text {
+  color: black;
+  margin-top: 7%;
+  font-size: 40px;
+  font-family: Lobster;
+  text-align: center;
 }
