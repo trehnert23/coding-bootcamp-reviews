@@ -6,6 +6,9 @@ class UsersController < ApplicationController
   end
 
   def create
+    userParams = params.require(:user).permit(:username, :email, :password)
+    User.create(userParams)
+    redirect_to root_path
   end
 
   def show
