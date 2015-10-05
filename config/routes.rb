@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
 	get '/bootcamps/1', to: 'bootcamps#show'
 
+	get '/bootcamps/:id/review', to: 'review#new'
+
 end
