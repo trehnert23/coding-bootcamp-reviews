@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
 	post '/users', to: 'users#create'
 
-	get '/bootcamps/:id', to: 'bootcamps#show'
+	get '/bootcamps/1', to: 'bootcamps#show'
 
 
 end
