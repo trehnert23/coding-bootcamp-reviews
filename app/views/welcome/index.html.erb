@@ -13,9 +13,9 @@
       <div class="modal-body">
       	<div class="signup-wrapper">
       		 <%= form_for @user do |f| %>
-        <%= f.email_field :email, class: "new-user-form", placeholder: 'your_email@domain.com' %>
-        <%= f.text_field :username, class: "new-user-form", placeholder: 'your_email@domain.com' %>
-        <%= f.password_field :password, class: "new-user-form", placeholder: 'your_email@domain.com' %>
+        <%= f.email_field :email, class: "new-user-form", placeholder: 'email123@domain.com' %>
+        <%= f.text_field :username, class: "new-user-form", placeholder: 'username' %>
+        <%= f.password_field :password, class: "new-user-form", placeholder: 'password' %>
         <%= f.submit 'Sign Up', id: "signup-button", class: 'btn btn-default text-center'%>
         <% end %>
       	</div>
