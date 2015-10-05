@@ -1,7 +1,7 @@
 <h1>Welcome#index</h1>
 <%= text_field_tag 'home-search', nil, placeholder: 'Search ... ' %>
 
-<a data-toggle="modal" href="#signup-modal" class="btn btn-default">Normal</a>
+<a data-toggle="modal" href="#signup-modal" class="btn btn-default">Sign Up</a>
 
 <div id="signup-modal" class="modal fade">
   <div class="modal-dialog">
@@ -11,7 +11,14 @@
         <h4 class="modal-title">Sign-Up</h4>
       </div>
       <div class="modal-body">
-        <p>One fine body…</p>
+      	<div class="signup-wrapper">
+      		 <%= form_for @user do |f| %>
+        <%= f.email_field :email, class: "new-user-form", placeholder: 'your_email@domain.com' %>
+        <%= f.text_field :username, class: "new-user-form", placeholder: 'your_email@domain.com' %>
+        <%= f.password_field :password, class: "new-user-form", placeholder: 'your_email@domain.com' %>
+        <%= f.submit 'Sign Up', id: "signup-button", class: 'btn btn-default text-center'%>
+        <% end %>
+      	</div>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
