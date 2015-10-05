@@ -1,2 +1,18 @@
 <h1>Welcome#index</h1>
 <%= text_field_tag 'home-search', nil, placeholder: 'Search ... ' %>
+
+<a data-toggle="modal" href="#signup-modal" class="btn btn-default">Normal</a>
+
+<div id="signup-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Sign-Up</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body…</p>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
