@@ -3,10 +3,71 @@
               /*Melissa's CSS*/
 /*----------------------------------------------*/
 
+
+header {
+    text-align: center;
+    color: #fff;
+    background: #18bc9c;
+}
+
+header .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+.img-responsive {
+  max-width: 200px;
+  max-height: 200px;
+  border: solid white 10px;
+
+}
+.bootcamp-header {
+  background-color: red;
+  position: relative;
+  display: inline-block;
+}
+
 .column {
   float: left;
   
 }
+
+.header-image {
+  position: absolute;
+  width: 100%;
+}
+
+.bootcamp-photo {
+  position: absolute;
+  width: 100%;
+  float: left;
+
+}
+
+.bootcamp-info {
+  float: left;
+  padding-right: 50px;
+}
+
+
 
 
 /*----------------------------------------------*/
