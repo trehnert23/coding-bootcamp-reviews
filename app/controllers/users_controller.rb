@@ -6,7 +6,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    binding.pry
     userParams = params.require(:user).permit(:username, :email, :password)
     @user = User.new userParams
     if @user.save
