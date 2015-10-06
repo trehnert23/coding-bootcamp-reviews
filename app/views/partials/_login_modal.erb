@@ -1,0 +1,21 @@
+<div id="login-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+      	<div class="signup-wrapper">
+      		 <%= form_for @user, url: '/sessions', method: "post" do |f| %>
+             <form>
+               <%= f.text_field :email, :class => "mail", placeholder: "Email" %>
+               <%= f.password_field :password, :class => "lock", placeholder: "Password" %>
+               <%= f.submit "Log In!" %>
+               <% end %>
+             </form>
+      	</div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

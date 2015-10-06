@@ -3,50 +3,18 @@
 </head>
 <body class="home_body">
     <%= render 'partials/nav_home' %>
+    <%= render 'partials/login_modal' %>
+    <%= render 'partials/signup_modal' %>
+    <div class="homepage_top_image">
+    	<img class="homepage_image" src="https://images.unsplash.com/7/Top_view.jpg?q=80&fm=jpg&s=4afed7e6e559be491437a10cec9120a8">
+    </div>
 
+    <div class="blurb_div">
+    	<p class="css_text">View, find, and review</p>
+    	<p class="css_text"> the best bootcamp for you!<span class="typing_span">|</span></p>
+    </div>
 
-<div id="login-modal" class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title">Login</h4>
-      </div>
-      <div class="modal-body">
-      	<div class="signup-wrapper">
-      		 <%= form_for @user, url: '/sessions', method: "post" do |f| %>
-             <form>
-               <%= f.text_field :email, :class => "mail", placeholder: "Email" %>
-               <%= f.password_field :password, :class => "lock", placeholder: "Password" %>
-               <%= f.submit "Log In!" %>
-               <% end %>
-             </form>
-      	</div>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-
-<div id="signup-modal" class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title">Sign-Up</h4>
-      </div>
-      <div class="modal-body">
-        <div class="signup-wrapper">
-           <%= form_for @user do |f| %>
-        <%= f.email_field :email, class: "new-user-form", placeholder: 'email123@domain.com' %>
-        <%= f.text_field :username, class: "new-user-form", placeholder: 'username' %>
-        <%= f.password_field :password, class: "new-user-form", placeholder: 'password' %>
-        <%= f.submit 'Sign Up', id: "signup-button", class: 'btn btn-default text-center'%>
-        <% end %>
-        </div>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+    <div class="course_logo_div">
+    </div>
 
 </body>
