@@ -34,4 +34,10 @@ class ReviewsController < ApplicationController
     render text: "/bootcamps/#{bc.id}"
   	# render text: "/bootcamp_reviews"
   end
+
+  def show
+    @reviews = BootcampReview.all
+    render :show
+  end
+
 end

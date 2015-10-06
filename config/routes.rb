@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	
+
  	root to: 'welcome#index'
 
 	post '/users', to: 'users#create'
@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 	get '/bootcamps/:id/review', to: 'reviews#new'
 
 	post '/reviews', to: 'reviews#create'
+	get  '/reviews', to: 'reviews#show'
 
 	get "/sign_in", to: "sessions#new"
 
