@@ -9,7 +9,10 @@ class BootcampsController < ApplicationController
   end
 
   def show
-    binding.pry
+    @bootcamp = Bootcamp.find(params[:id]) 
+
+    render :show
+
   end
 
   def edit
