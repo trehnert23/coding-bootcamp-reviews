@@ -1,7 +1,7 @@
 class ReviewsController < ApplicationController
 
   def index
-  	@bootcamp_reviews = BootcampReviews.all
+  	@bootcamp_reviews = BootcampReview.all
   	render json: @bootcamp_reviews
   end
 
@@ -11,12 +11,20 @@ class ReviewsController < ApplicationController
   end
 
   def create
-  	binding.pry
-  	bcContent = params.require(:bootcamp_review).require(:"0").permit(:value)
-  	bootcampReviewInfo = {}
-  	bootcampReviewInfo.content = bcContent
+  	#make checks in front end before even submitting
+  	# binding.pry
+  	bcId = params[:bootcamp_id]
+  	
+  	bcContent = params.require(:bootcamp_review).require(:"0").permit(:value)[:value]
+  	bcReviewInfo = {content: bcContent}
+  	bcReview = BootcampReview.create(bcReviewInfo)
 
-  	BootcampReview.create(bcContent)
-  	redirect_to bootcamp_reviews_path
+  	instructorContent = params.require(:instructor_review).require(:"0").permit(:value)[:value]
+  	instructorReviewInfo = {content: instructorContent}
+  	instructorReview = InstructorReview.create(instructorReviewInfo)
+
+  	
+	render text: "/bootcamps/#{bcId}"
+  	
   end
 end

@@ -61,12 +61,16 @@ function scrollToAnchor(aid) {
 function submitReview() {
 	$('#review-submit').click(function () {
 		var data = {};
-		data.bootcamp_review = $('#bootcamp-review-form').serializeArray();
-		data.instructor_review = $('#instructor-review-form').serializeArray();
+		data.bootcamp_id = window.location.pathname.split("/")[2];
+		console.log(data);
+		// data.bootcamp_review = $('#bootcamp-review-form').serializeArray();
+		// data.instructor_review = $('#instructor-review-form').serializeArray();
 
-		console.log(data.bootcamp_review[0].value);
-		console.log(data.instructor_review[0].value);
-		$.post('/reviews', data);
+		// console.log(data.bootcamp_review[0].value);
+		// console.log(data.instructor_review[0].value);
+		$.post('/reviews', data).done(function(data) {
+			window.location.href = data;
+		});
 	})
 
 }
