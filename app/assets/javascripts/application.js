@@ -19,12 +19,13 @@
 
 $(document).ready(function() {
 	// NAVBAR SCROLL OPACITY EFFECT
-	$(document).scroll(function() {
-	  var dHeight = $(this).height()-$(window).height();
-	  if (dHeight >= $(this).scrollTop()) {
-	    $('nav').css('background', 'rgba(0,0,0,' + $(this).scrollTop() / dHeight + ')');
-	  }
-	});
+
+	// $(document).scroll(function() {
+	//   var dHeight = $(this).height()-$(window).height();
+	//   if (dHeight >= $(this).scrollTop()) {
+	//     $('nav').css('background', 'rgba(0,0,0,' + $(this).scrollTop() / dHeight + ')');
+	//   }
+	// });
 
 
 	$("#home_link").click(function() {

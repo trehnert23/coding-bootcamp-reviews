@@ -1,0 +1,20 @@
+<div id="signup-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Sign-Up</h4>
+      </div>
+      <div class="modal-body">
+        <div class="signup-wrapper">
+           <%= form_for @user do |f| %>
+        <%= f.email_field :email, class: "new-user-form", placeholder: 'email123@domain.com' %>
+        <%= f.text_field :username, class: "new-user-form", placeholder: 'username' %>
+        <%= f.password_field :password, class: "new-user-form", placeholder: 'password' %>
+        <%= f.submit 'Sign Up', id: "signup-button", class: 'btn btn-default text-center'%>
+        <% end %>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

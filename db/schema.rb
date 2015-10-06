@@ -62,6 +62,24 @@ ActiveRecord::Schema.define(version: 20151006184214) do
     t.integer  "bootcamp_id"
   end
 
+  create_table "reviews", force: :cascade do |t|
+    t.text     "body"
+    t.integer  "user_id"
+    t.integer  "instructor_id"
+    t.integer  "bootcamp_id"
+    t.integer  "hotness"
+    t.integer  "approachable"
+    t.integer  "knowledge"
+    t.integer  "organization"
+    t.integer  "campus"
+    t.integer  "price"
+    t.integer  "placement"
+    t.integer  "location"
+    t.integer  "instructors"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "username"
