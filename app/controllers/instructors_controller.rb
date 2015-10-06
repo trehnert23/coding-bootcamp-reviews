@@ -1,5 +1,6 @@
-class IsntructorsController < ApplicationController
+class InstructorsController < ApplicationController
   def index
+    @instructors = Instructor.search(params[:search])
   end
 
   def new

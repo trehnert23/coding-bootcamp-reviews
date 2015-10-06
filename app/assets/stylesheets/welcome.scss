@@ -1,50 +1,57 @@
-.signup-wrapper {
-	width: 200px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#new-user {
-	text-align: user;
-}
-
-#signup-button {
-	margin-top: 5px;
-}
-
-.new-user-form {
-	width: 200px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-/*----------------------------------------------*/
+/*---------------------------------------------
+*/
                     /*navbar*/
-/*----------------------------------------------*/
+/*---------------------------------------------*/
+
 .navbar .navbar-custom .navbar-fixed-top {
   z-index: 99999;
 }
 
-.brand {
-  margin-left: 20px;
+.home_brand > a {
+  margin-left: -35px;
   font-size: 30px;
+  text-decoration: none;
   color: white;
-  position: absolute;
   background-color: transparent;
   border: transparent;
-}
-
-.navbar-custom .navbar-nav > a {
-  background-color: transparent;
-  border: transparent;
-  margin-top: 1%;
-  color: white;
-  font-size: 22px;
   outline: none;
 }
 
-.navbar-custom .navbar-nav > a:hover {
-  color: rgba(84,84,84,1);
+.home_nav_button > a {
+  background-color: transparent;
+  text-decoration: none;
+  color: rgb(128,128,128);
+  border: none;
+  margin-left: 20px;
+  margin-right: 35px;
+  font-size: 30px;
   outline: none;
 }
+
+.home_nav_button > a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+/*---------------------------------------------
+*/
+                  /*home body*/
+/*---------------------------------------------
+*/
+
+
+.home_body {
+  background-color: #8E8E8E;
+}
+
+
+
+
+
+
+
+
+
+
 
