@@ -7,8 +7,13 @@ class UsersController < ApplicationController
 
   def create
     userParams = params.require(:user).permit(:username, :email, :password)
-    User.create(userParams)
-    redirect_to root_path
+    @user = User.new userParams
+    if @user.save
+      redirect_to root_path
+    else
+      console.log("you done fucked up")
+      redirect_to root_path
+    end
   end
 
   def show
