@@ -4,6 +4,15 @@
               /*Melissa's CSS*/
 /*----------------------------------------------*/
 
+.user-photo img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.user-review-info {
+  text-align: center;
+}
 
 header {
     text-align: center;
@@ -76,9 +85,20 @@ header .intro-text .skills {
   padding-right: 50px;
 }
 
+.rating-boxes {
+  padding: 20px 10px 20px 10px;
+  border: solid white 1px;
+  color: #fff;
+  background-color: #18bc9c;
+}
+
+.review {
+  margin-top: 10px;
+}
+
 
 /*----------------------------------------------*/
-              /*Bootcamp Show CSS*/
+              /*Bootcamp Nav CSS*/
 /*----------------------------------------------*/
 
 .home_nav_button > li > button {
@@ -111,32 +131,6 @@ header .intro-text .skills {
      background-color: black;
     }
 }
-
-
-/*----------------------------------------------*/
-              /*Bootcamp Show CSS*/
-/*----------------------------------------------*/
-
-
-.homepage_image {
-  width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
