@@ -1,10 +1,46 @@
+
+
 <form id="bootcamp-review-form">
-	<textarea cols="30" rows="5" name="bootcamp_review[content]" placeholder='Bootcamp'></textarea>
-<!-- 	<input id="rate-campus" type="number" name="bootcamp_review[campus]"/> -->
+
+		<textarea cols="30" rows="5" name="bootcamp_review[content]" placeholder='Bootcamp'></textarea><br>
+	
+		
+
+  		<div class="radio"><h3>Did you find employment after graduation?</h3>
+  		  <label><input type="radio" name="employment" id="employed" value="1">Employed</label>
+  		</div>
+  		<div class="radio">
+  		  <label><input type="radio" name="employment" id="not-employed">Not Employed</label>
+  		</div>
+  		<div class="radio">
+  		  <label><input type="radio" name="employment" id="still-attending">Still Attending</label>
+  		</div>
+  		<div class="radio">
+  		  <label><input type="radio" name="employment" id="not-seeking-employment">Not Seeking Employment</label>
+  		</div>
+
+
+
+
+
+  		<div class="radio"><h3>Was the course worth the tuition?</h3>
+  		  <label><input type="radio" name="worth" id="worth-it-yes">Yes</label>
+  		</div>
+  		<div class="radio">
+  		  <label><input type="radio" name="worth" id="worth-it-no">No</label>
+  		</div>
+
+
+  		<h3>On a scale of 1 - 10, how would you rate...?</h3>   		
+  		<p>Facilities/Campus <input type="number"  id="campus-rate" value="1" min="1" max="10"></p>
+  		<p>Job Support & Career Services <input type="number" id="job-supp-rate" value="1" min="1" max="10"></p>
+  		<p>Location <input type="number"  id="location-rate" value="1" min="1" max="10"></p>
+
+	
 </form>
 
-<form id="instructor-review-form">
+<!-- <form id="instructor-review-form">
 	<textarea cols="30" rows="5" id="instructor-review-form" name="instructor_review[text]" placeholder='Instructor'></textarea>
-</form>
+</form> -->
 
 <button id="review-submit" class="btn btn-default">Submit</button>
