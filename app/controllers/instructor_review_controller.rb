@@ -1,6 +1,4 @@
 class InstructorReviewController < ApplicationController
-  def create
-  end
 
   def show
   end
