@@ -47,6 +47,7 @@ $(document).ready(function() {
 		scrollToAnchor('slide4');
 	});
 
+	submitReview();
 
 });
 
@@ -55,4 +56,16 @@ function scrollToAnchor(aid) {
 	var aTag = $("a[name='"+ aid + "']");
 	$('html,body').animate({
 		scrollTop: aTag.offset().top},2000);
+}
+
+function submitReview() {
+	$('#review-submit').click(function () {
+		var data = $('#bootcamp-review-form').val();
+		var data2 = $('#instructor-review-form').val();
+		var bootcampReview = {};
+		bootcampReview.content = data;
+
+		$.post('/bootcamp-reviews', bootcampReview)
+	})
+
 }

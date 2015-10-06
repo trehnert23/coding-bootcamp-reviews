@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
 	get '/bootcamps/:id/review', to: 'review#new'
 
+	post '/bootcamp-reviews', to: 'bootcamp_review#create'
+
 end
