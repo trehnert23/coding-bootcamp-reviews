@@ -6,9 +6,14 @@ class UsersController < ApplicationController
   end
 
   def create
+    binding.pry
     userParams = params.require(:user).permit(:username, :email, :password)
-    User.create(userParams)
-    redirect_to root_path
+    @user = User.new userParams
+    if @user.save
+      redirect_to root_path
+    else
+      binding.pry
+    end
   end
 
   def show

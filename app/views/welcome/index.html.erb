@@ -4,12 +4,18 @@
 <body class="home_body">
     <%= render 'partials/nav_home' %>
 
-    <%= form_tag instructors_path, :method => 'get' do %>
 
-        <%= text_field_tag :search, params[:search] %>
-        <%= submit_tag "Search", :name => nil %>
-        <% end %>
 
+        <div class>
+          <%= form_for @user, url: '/sessions', method: "post" do |f| %>
+            <form>
+              <%= f.text_field :email, :class => "mail", placeholder: "Email" %>
+              <%= f.password_field :password, :class => "lock", placeholder: "Password" %>
+              <%= f.submit "Log In!" %>
+              <% end %>
+            </form>
+        </div>
+<!-- <a data-toggle="modal" href="#signup-modal" class="btn btn-default">Sign Up</a> -->
 
 <div id="signup-modal" class="modal fade">
   <div class="modal-dialog">

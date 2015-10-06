@@ -10,6 +10,12 @@ class InstructorsController < ApplicationController
   end
 
   def show
+    @instructor = instructors.find(params[:id])
+      if current_instructor == @instructor
+        render :show
+      else
+        redirect_to "/instructors/new"
+      end
   end
 
   def edit
