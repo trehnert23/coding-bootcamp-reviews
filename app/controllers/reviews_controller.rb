@@ -14,7 +14,7 @@ class ReviewsController < ApplicationController
   	#make checks in front end before even submitting
   	# binding.pry
   	bcId = params[:bootcamp_id]
-  	
+
   	bcContent = params.require(:bootcamp_review).require(:"0").permit(:value)[:value]
   	bcReviewInfo = {content: bcContent}
   	bcReview = BootcampReview.create(bcReviewInfo)
@@ -22,9 +22,12 @@ class ReviewsController < ApplicationController
   	instructorContent = params.require(:instructor_review).require(:"0").permit(:value)[:value]
   	instructorReviewInfo = {content: instructorContent}
   	instructorReview = InstructorReview.create(instructorReviewInfo)
-
-  	
-	render text: "/bootcamps/#{bcId}"
-  	
+    render text: "/bootcamps/#{bcId}"
   end
+
+  def show
+    @reviews = BootcampReview.all
+    render :show
+  end
+
 end
