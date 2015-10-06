@@ -6,8 +6,8 @@ Rails.application.routes.draw do
 
 	get '/bootcamps/1', to: 'bootcamps#show'
 
-	get '/bootcamps/:id/review', to: 'review#new'
+	get '/bootcamps/:id/review', to: 'reviews#new'
 
-	post '/bootcamp-reviews', to: 'bootcamp_review#create'
+	post '/reviews', to: 'reviews#create'
 
 end

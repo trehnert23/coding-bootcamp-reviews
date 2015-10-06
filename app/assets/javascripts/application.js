@@ -60,12 +60,13 @@ function scrollToAnchor(aid) {
 
 function submitReview() {
 	$('#review-submit').click(function () {
-		var data = $('#bootcamp-review-form').val();
-		var data2 = $('#instructor-review-form').val();
-		var bootcampReview = {};
-		bootcampReview.content = data;
+		var data = {};
+		data.bootcamp_review = $('#bootcamp-review-form').serializeArray();
+		data.instructor_review = $('#instructor-review-form').serializeArray();
 
-		$.post('/bootcamp-reviews', bootcampReview)
+		console.log(data.bootcamp_review[0].value);
+		console.log(data.instructor_review[0].value);
+		$.post('/reviews', data);
 	})
 
 }
