@@ -85,7 +85,6 @@ header .intro-text .skills {
   padding-right: 50px;
 }
 
-
 .rating-boxes {
   padding: 20px 10px 20px 10px;
   border: solid white 1px;
@@ -96,3 +95,55 @@ header .intro-text .skills {
 .review {
   margin-top: 10px;
 }
+
+
+/*----------------------------------------------*/
+              /*Bootcamp Nav CSS*/
+/*----------------------------------------------*/
+
+.home_nav_button > li > button {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  border: none;
+  font-size: 30px;
+  outline: none;
+}
+
+.home_brand .bootcamp_brand {
+    margin-left: -35px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+}
+
+.home_nav_button > li > button:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: rgb(128,128,128);
+}
+
+@media screen and (max-width: 375px) {
+    #myNavbar {
+     background-color: black;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
