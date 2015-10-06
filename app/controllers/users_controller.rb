@@ -12,7 +12,8 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to root_path
     else
-      binding.pry
+      console.log("you done fucked up")
+      redirect_to root_path
     end
   end
 
