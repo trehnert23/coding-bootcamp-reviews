@@ -12,8 +12,7 @@ Rails.application.routes.draw do
 
 	get "/users/:id", to: "bootcamps#show"
 
-
-
+	delete '/sessions', to: 'sessions#destroy'
 
 
 end
