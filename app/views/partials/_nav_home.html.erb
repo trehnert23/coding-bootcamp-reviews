@@ -12,11 +12,12 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav home_nav_button navbar-right">
-        <a data-toggle="modal" href="#signup-modal">Sign Up</a>
-      </ul>
-
-      <ul class="nav navbar-nav home_nav_button navbar-right">
-        <a data-toggle="modal" href="#login-modal">Login</a>
+        <% if current_user %>
+          <li><%= link_to "Logout", root_path , {method: :delete} %></li> 
+        <% else %>
+          <li><a data-toggle="modal" href="#signup-modal">Sign Up</a></li>
+          <li><a data-toggle="modal" href="#login-modal">Login</a></li>
+        <% end %>
       </ul>
     </div>
   </div>
