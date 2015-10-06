@@ -1,6 +1,4 @@
 class BootcampReviewController < ApplicationController
-  def create
-  end
 
   def show
   end
