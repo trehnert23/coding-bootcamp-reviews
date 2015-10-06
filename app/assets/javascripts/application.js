@@ -48,6 +48,7 @@ $(document).ready(function() {
 	});
 
 	submitReview();
+	
 
 });
 
@@ -62,15 +63,43 @@ function submitReview() {
 	$('#review-submit').click(function () {
 		var data = {};
 		data.bootcamp_id = window.location.pathname.split("/")[2];
-		console.log(data);
-		// data.bootcamp_review = $('#bootcamp-review-form').serializeArray();
-		// data.instructor_review = $('#instructor-review-form').serializeArray();
+		data.bootcamp_review = $('#bootcamp-review-form').serializeArray();
+		data.instructor_review = $('#instructor-review-form').serializeArray();
+		data.hired = jobStatus();
+		data.worthit = worthIt();
+		data.campus = $('#campus-rate').val();
+		data.jobsupp = $('#job-supp-rate').val();
+		data.locationrate = $('#location-rate').val();  
 
-		// console.log(data.bootcamp_review[0].value);
-		// console.log(data.instructor_review[0].value);
 		$.post('/reviews', data).done(function(data) {
 			window.location.href = data;
 		});
 	})
 
+}
+
+function jobStatus() {
+	var hired;
+	if (document.getElementById('employed').checked) {
+		hired = 'Employed';
+	} else if (document.getElementById('not-employed').checked) {
+		hired = 'Not Employed'
+	} else if (document.getElementById('still-attending').checked){
+		hired = 'Still Attending'
+	} else if (document.getElementById('not-seeking-employment').checked){
+		hired = 'Not Seeking Employment'
+	}
+
+	return hired;
+}
+
+function worthIt() {
+	var courseWorth;
+	if (document.getElementById('worth-it-yes').checked) {
+		courseWorth = 'Yes';
+	} else if (document.getElementById('worth-it-no').checked) {
+		courseWorth = 'No';
+	} 
+
+	return courseWorth;
 }
