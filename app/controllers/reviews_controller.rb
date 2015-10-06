@@ -12,17 +12,27 @@ class ReviewsController < ApplicationController
 
   def create
   	#make checks in front end before even submitting
-  	# binding.pry
-  	bcId = params[:bootcamp_id]
+    # binding.pry
+    bcContent = params.require(:bootcamp_review).require(:"0").permit(:value)[:value]
+  	bcCampus = params[:campus]
+    bcId = params[:bootcamp_id]
+    bcWorth = params[:worthit]
+    bcJobHelp = params[:jobsupp]
+    bcLocation = params[:locationrate]
+    bcHired = params[:hired]
+  	
 
-  	bcContent = params.require(:bootcamp_review).require(:"0").permit(:value)[:value]
-  	bcReviewInfo = {content: bcContent}
+  	bcReviewInfo = {content: bcContent, hired: bcHired, worthit: bcWorth, jobhelp: bcJobHelp, campus: bcCampus, location: bcLocation}
   	bcReview = BootcampReview.create(bcReviewInfo)
+    bc = Bootcamp.find_by_id(bcId)
+    bc.bootcamp_reviews << bcReview
+  	# instructorContent = params.require(:instructor_review).require(:"0").permit(:value)[:value]
+  	# instructorReviewInfo = {content: instructorContent}
+  	# instructorReview = InstructorReview.create(instructorReviewInfo)
 
-  	instructorContent = params.require(:instructor_review).require(:"0").permit(:value)[:value]
-  	instructorReviewInfo = {content: instructorContent}
-  	instructorReview = InstructorReview.create(instructorReviewInfo)
-    render text: "/bootcamps/#{bcId}"
+  	
+    render text: "/bootcamps/#{bc.id}"
+  	# render text: "/bootcamp_reviews"
   end
 
   def show
