@@ -47,6 +47,7 @@ $(document).ready(function() {
 		scrollToAnchor('slide4');
 	});
 
+	submitReview();
 
 });
 
@@ -57,4 +58,19 @@ function scrollToAnchor(aid) {
 		scrollTop: aTag.offset().top},2000);
 }
 
+function submitReview() {
+	$('#review-submit').click(function () {
+		var data = {};
+		data.bootcamp_id = window.location.pathname.split("/")[2];
+		console.log(data);
+		// data.bootcamp_review = $('#bootcamp-review-form').serializeArray();
+		// data.instructor_review = $('#instructor-review-form').serializeArray();
 
+		// console.log(data.bootcamp_review[0].value);
+		// console.log(data.instructor_review[0].value);
+		$.post('/reviews', data).done(function(data) {
+			window.location.href = data;
+		});
+	})
+
+}

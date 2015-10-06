@@ -1,18 +1,23 @@
 Rails.application.routes.draw do
-
-	root to: 'welcome#index'
+	
+ 	root to: 'welcome#index'
 
 	post '/users', to: 'users#create'
+
 	get '/instructors', to: 'instructors#index'
 
 	get '/bootcamps/1', to: 'bootcamps#show'
 
-	get "/sign_in", to: "sessions#new"
-	post "/sessions", to: "sessions#create"
+	get '/bootcamps/:id/review', to: 'reviews#new'
 
-	get "/users/:id", to: "bootcamps#show"
+	post '/reviews', to: 'reviews#create'
+
+	get "/sign_in", to: "sessions#new"
+
+	post "/sessions", to: "sessions#create"
 
 	delete '/sessions', to: 'sessions#destroy'
 
+	get "/users/:id", to: "bootcamps#show"
 
 end
