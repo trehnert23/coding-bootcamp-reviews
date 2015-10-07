@@ -1,5 +1,10 @@
 class BootcampsController < ApplicationController
   def index
+    if params[:search]
+      @articles = Bootcamp.search(params[:search]).order("created_at DESC")
+    else
+      @articles = Bootcamp.order("created_at DESC")
+    end
   end
 
   def new
