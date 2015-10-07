@@ -4,12 +4,13 @@ class SessionsController < ApplicationController
   end
 
   def create
+    user_params = params.require(:user).permit(:email, :password)
     @user = User.confirm(user_params)
     if @user
       login(@user)
-      redirect_to "/"
+      redirect_to :back
     else
-      redirect_to "/"
+      #redirect_to "/"
     end
   end
 
