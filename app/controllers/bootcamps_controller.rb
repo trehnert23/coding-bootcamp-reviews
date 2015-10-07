@@ -8,8 +8,8 @@ class BootcampsController < ApplicationController
   def create
   end
 
-  def show
 
+  def show
     @bootcamp = Bootcamp.find(params[:id]) 
     @user = current_user
     render :show

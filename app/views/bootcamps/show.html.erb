@@ -11,6 +11,7 @@
                     <hr class="star-light">
 	                    <div class="bootcamp-info">
 	                    	<ul class="column top" style="list-style:none;">
+
 	                    			<li><%= @bootcamp.address %></li>
 	                    			<li><%= @bootcamp.url %></li>
 	                    			<li><%= @bootcamp.phone %></li>
@@ -28,7 +29,10 @@
         		</div>
         </div>
     <hr class="star-light">
-    <a type="button" class="btn btn-default" action="/bootcamp/1/review">Submit a Review!</a>
+
+<a type="button" class="btn btn-default" href="/bootcamps/<%= @bootcamp.id %>/review">Submit a Review!</a>
+
+
 </header>
 
 <!--Partials Nav bar-->
@@ -41,6 +45,7 @@
 	<div class="row">
 		<h1>Reviews</h1>
 		<div class="col-lg-8 col-sm-12">
+
 
       <!--First Review-->
 			<div class="col-lg-12 col-sm-12" id="review">
@@ -145,8 +150,6 @@
 
 
 <%= render "partials/footer_show" %>
-
-
 
 <div class="footer text-center">
 	<div class="container">
