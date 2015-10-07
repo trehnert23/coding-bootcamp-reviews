@@ -1,2 +1,7 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<%= @user.bootcamp_reviews.length %>
+
+<% @user.bootcamp_reviews.each do |review| %>
+	
+	<%= review.content %>
+
+<% end %>
