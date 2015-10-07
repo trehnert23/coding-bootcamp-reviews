@@ -60,20 +60,24 @@
 /*PHONE*/
 @media screen and (max-width: 375px) {
     /*----- Menu Outline -----*/
+    .clearFix {
+      width: 50%;
+    }
+
     .dropdown_header {
-      font-size: 20px;
-      margin-left: -20px;
+      width: 150%;
+      margin-left: -50px;
       font-family: arial rounded mt bold;
       text-align: center;
     }
 
     .dropdown_header:hover {
       border-radius: 5px;
-      background-color: #3e3436;
+      width: 150%;
     }
 
     .menu-wrap {
-        width:75%;
+        width:80%;
         border-radius: 5px;
         margin-top: -20%;
         margin-left: 10%;
@@ -84,7 +88,7 @@
     }
      
     .menu {
-        width:1000px;
+        width:99%;
         margin:0px auto;
     }
      
@@ -135,23 +139,23 @@
     }
      
     .sub-menu {
-        width:160%;
+        width: 370px;
         padding:5px 0px;
         position:absolute;
         top:100%;
         left:0px;
-        margin-left: -130px;
+        margin-left: -36px;
         border-radius: 5px;
-        z-index: 9;
+        z-index: 2;
         opacity:0;
         transition:opacity linear 0.15s;
         box-shadow:0px 2px 3px rgba(0,0,0,0.2);
         background: white;
         list-style-type: disc;
-        columns: 4;
-        -webkit-columns: 4;
-        -moz-columns: 4;
-        list-style-position: inside;//this is important addition
+        columns: 3;
+        -webkit-columns: 3;
+        -moz-columns: 3;
+        list-style-position: inside;
     }
      
     .sub-menu li {
@@ -160,8 +164,9 @@
     }
      
     .sub-menu li a {
-        padding:10px 30px;
+        padding:10px 20px;
         display:block;
+        font-size: 15px;
     }
      
     .sub-menu li a:hover, .sub-menu .current-item a {
@@ -247,11 +252,12 @@
       display: none;
     }
 
-    .course_logo_div {
+  /*  .course_logo_div {
       background-color: #8E8E8E;
       width: 375px;
       height: 100%;
       position: relative;
+      z-index: 1;
     }
 
     .course_logo_div:before {
@@ -263,7 +269,7 @@
         top: 0;
         left: 0;
         background: -webkit-radial-gradient(bottom right, ellipse cover, rgba(255,255,255,0) 10%,rgba(0,0,0,1) 100%);
-    }
+    }*/
 
     .course_table2 {
       display: none;
@@ -307,11 +313,11 @@
     .menu-wrap {
         width:30%;
         border-radius: 5px;
-        margin-top: -35%;
+        margin-top: 5%;
         margin-left: 35%;
         box-shadow:0px 1px 3px rgba(0,0,0,0.2);
         background: white;
-        position: absolute;
+        position: relative;
         z-index: 1;
     }
      
@@ -405,7 +411,7 @@
     .blurb_div {
       width: 80%;
       background-color: transparent;
-      position: absolute;
+      position: relative;
       margin-top: -800px;
       margin-left: 16%;
       /*transform:rotateX(70deg);*/
