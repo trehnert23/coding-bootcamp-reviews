@@ -23,4 +23,5 @@ Rails.application.routes.draw do
 	get "/users/:id", to: "bootcamps#show"
 
 	get '/bootcamp_reviews', to: "bootcamp_reviews#index"
+
 end

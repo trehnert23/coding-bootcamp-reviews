@@ -1,10 +1,8 @@
 class BootcampsController < ApplicationController
   def index
-    if params[:search]
-      @articles = Bootcamp.search(params[:search]).order("created_at DESC")
-    else
-      @articles = Bootcamp.order("created_at DESC")
-    end
+  end
+
+  def search
   end
 
   def new
@@ -14,7 +12,7 @@ class BootcampsController < ApplicationController
   end
 
   def show
-    @bootcamp = Bootcamp.find_by_id(params[:id])
+    @bootcamp = Bootcamp.find_by({id: params[:id]})
     @user = current_user
   end
 
