@@ -25,7 +25,9 @@ class ReviewsController < ApplicationController
   	bcReviewInfo = {content: bcContent, hired: bcHired, worthit: bcWorth, jobhelp: bcJobHelp, campus: bcCampus, location: bcLocation}
   	bcReview = BootcampReview.create(bcReviewInfo)
     bc = Bootcamp.find_by_id(bcId)
+    user = current_user
     bc.bootcamp_reviews << bcReview
+    user.bootcamp_reviews << bcReview
   	# instructorContent = params.require(:instructor_review).require(:"0").permit(:value)[:value]
   	# instructorReviewInfo = {content: instructorContent}
   	# instructorReview = InstructorReview.create(instructorReviewInfo)

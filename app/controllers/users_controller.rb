@@ -10,9 +10,9 @@ class UsersController < ApplicationController
     @user = User.new userParams
     if @user.save
       login(@user)
-      redirect_to root_path
+      redirect_to "/"
     else
-      redirect_to root_path
+      redirect_to "/"
     end
   end
 
