@@ -4,10 +4,20 @@
 }
  
 /*----- Menu Outline -----*/
+.dropdown_header {
+  font-size: 30px;
+  font-family: arial rounded mt bold;
+  text-align: center;
+}
+
 .menu-wrap {
-    width:100%;
+    width:30%;
+    border-radius: 5px;
+    margin-top: -35%;
+    margin-left: 35%;
     box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-    background:#3e3436;
+    background: white;
+    position: absolute;
     z-index: 99999;
 }
  
@@ -29,7 +39,7 @@
  
 .menu li:hover > a, .menu .current-item > a {
     text-decoration:none;
-    color:#be5b70;
+    color: grey;
 }
  
 .menu .arrow {
@@ -52,7 +62,7 @@
 }
  
 .menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    background:#2e2728;
+    background: white;
 }
  
 /*----- Bottom Level -----*/
@@ -71,7 +81,7 @@
     opacity:0;
     transition:opacity linear 0.15s;
     box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-    background:#2e2728;
+    background: white;
 }
  
 .sub-menu li {
@@ -82,6 +92,11 @@
 .sub-menu li a {
     padding:10px 30px;
     display:block;
+    list-style-type: disc;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-position: inside;//this is important addition
 }
  
 .sub-menu li a:hover, .sub-menu .current-item a {
