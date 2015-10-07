@@ -1,7 +1,10 @@
 class BootcampReviewsController < ApplicationController
 
   def index
-    @bootcamp_reviews = BootcampReview.all
+
+    bootcampId = params[:id]
+    @bootcamp = Bootcamp.find_by_id(bootcampId)
+    @reviews = @bootcamp.bootcamp_reviews
   end
 
   def show

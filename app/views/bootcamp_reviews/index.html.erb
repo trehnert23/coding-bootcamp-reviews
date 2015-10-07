@@ -1,0 +1,46 @@
+<%= render 'partials/nav_show' %>
+
+<header>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4"></div>
+          <div class="col-lg-4 intro-text">
+              <span class="name"><%= @bootcamp.name %></span>
+                    <div class="bootcamp-info"></div>
+                </div>
+            </div>
+</header>
+
+<h1>Reviews Contd</h1>
+
+<% @reviews.each do |review| %>
+
+<div class="col-lg-12 col-sm-12" id="review">
+  <div class="col-lg-3 col-md-3 col-xs-12 user-review-info">
+    <ul style="list-style:none;">
+      <li class="user-photo"><img src="http://2016rotarypresidentialconferencemanila.org/wp-content/uploads/2015/05/user-icon-silhouette.png"></li>
+      <li> <%= User.find_by_id(review.user_id).username %></li>
+      <li><%= review.created_at %></li>
+    </ul>
+  </div>
+  <div class="col-lg-9 col-md-9 col-xs-12">
+    <div class="col-lg-12 title-ratings">
+      <div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Overview <br> Amazing!</p></div>
+      <div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Job search: <br><%= review.jobhelp %></p></div>
+      <div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Instructors: <br> Amazing!</p></div>
+
+      <div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Location: <br> <%= review.location %></p></div>
+      <div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Worth it? <br> <%= review.worthit %></p></div>
+      <div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Hired? <br>  <%= review.hired %></p></div>
+    </div>
+
+    <div class="col-lg-12 review">
+      <p><%= review.content %></p>
+    </div>
+    <h5 class="more"><a href="#" class="button">Read More...</a></h5>
+  </div>
+</div>
+<!--End of Review-->
+<br>
+
+<% end %>

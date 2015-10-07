@@ -1,0 +1,42 @@
+/*----------------------------------------------*/
+              /*Review Form CSS*/
+/*----------------------------------------------*/
+
+header {
+	padding-top: 5%;
+	text-align: left;
+	padding-left: 5%;
+}
+
+
+ul {
+	list-style-type: none;
+
+}
+
+.the-form {
+	padding-left: 5%;
+}
+
+.container {
+	padding-bottom: 10%;
+}
+
+.button {
+	border: none;
+	background-color: #18bc9c !important;
+	color: #fff !important;
+	text-transform: uppercase;
+	padding: 13px 32px !important;
+	margin-top:10px;
+	font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
