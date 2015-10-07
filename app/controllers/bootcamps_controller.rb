@@ -11,6 +11,7 @@ class BootcampsController < ApplicationController
   # GET /bootcamps/:id
   def show
     @bootcamp = Bootcamp.find params[:id]
+    @user = current_user
   end
 
   def edit
