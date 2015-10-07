@@ -22,12 +22,13 @@
 	                    		<h4>Courses offered</h4>
 	                    			<li><% @bootcamp.courses.split("|").each do | course |  %></li>
 	                    			<li> <%= course %> </li>
-	                    			<% end %> 
+	                    			<% end %>
 
 	                    	</ul>
 	                    </div>
         		</div>
         </div>
+
     <hr class="star-light">
 
 <a type="button" class="btn btn-default" href="/bootcamps/<%= @bootcamp.id %>/review" data-no-turbolink="true">Submit a Review!</a>
@@ -45,7 +46,7 @@
 		<h1>Reviews</h1>
 		<div class="col-lg-8 col-sm-12">
 
-		 <% 6.times do |i| %> 
+		 <% 6.times do |i| %>
 			<% review =  @bootcamp.bootcamp_reviews[@reviewsLength - i] %>
 
 			<div class="col-lg-12 col-sm-12" id="review">
