@@ -15,128 +15,53 @@
     </div>
 
 
-    	<!-- PHONE -->
-    <div class="course_logo_div">
-    	<div class="sf_courses">
-    		<p><u>Write a review about your bootcamp!</u></p>
-            <p><u> or view reviews by others!</u></p>
-    	</div>
-    	<table class="course_table" style="width:70%">
-    	  	<tr>
-    	    	<td class="table_cell"><a href="http://devbootcamp.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/876/s100/dbc-t-profile-400x400px.jpg"></a><br>Dev Bootcamp</td>
-                <td class="table_cell"><%= link_to image_tag("https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/813/s100/ga-logo-2-compressor.png", class: "bootcamp_logo"), bootcamps_path(1) %><br>General Assembly</td>
-    	    	<td class="table_cell"><a href="http://www.appacademy.io/#p-home"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/551/s100/margin-red-1000.png"></a><br>App Academy</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><%= link_to image_tag("https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/8/s100/hack-reactor-logo.png", class: "bootcamp_logo"), bootcamps_path(2) %><br>Hack Reactor</td>
-    	    	<td class="table_cell"><a href="https://hackbrightacademy.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/84/s100/hackbright-academy-logo.jpg"></a><br>Hackbright Academy</td>
-    	    	<td class="table_cell"><a href="http://www.rocketu.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/11/s100/rocket-u-logo.png"></a><br>Rocket U</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="https://codepath.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/60/s100/codepath-logo.png"></a><br>CodePath</td>
-    	    	<td class="table_cell"><a href="http://www.zipfianacademy.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/53/s100/zipfian-academy-logo.png"></a><br>Zipfian Academy</td>
-    	    	<td class="table_cell"><a href="http://www.codingdojo.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/818/s100/codingdojo-coursereport-final2.png"></a><br>Coding Dojo</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="https://www.bignerdranch.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/420/s100/big-20nerd-20ranch-20logo.jpeg"></a><br>Big Nerd Ranch</td>
-    	    	<td class="table_cell"><a href="http://www.joinkoru.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/449/s100/koru-logo.png"></a><br>Koru</td>
-    	    	<td class="table_cell"><a href="http://www.hackercodingacademy.com/"><img class="bootcamp_logo" src="http://www.bootcamps.in/wp-content/uploads/2014/12/Hacker-coding-academy.png"></a><br>Hacker Coding Academy</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="https://www.codercamps.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/907/s100/coder-camps-logo.png"></a><br>Coder Camps</td>
-    	    	<td class="table_cell"><a href="http://www.thisismetis.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/75/s100/metis-logo.png"></a><br>Metis</td>
-    	    	<td class="table_cell"><a href="http://www.productschool.com/"><img class="bootcamp_logo" src="http://photos1.meetupstatic.com/photos/event/8/6/f/d/global_441574557.jpeg"></a><br>Product School</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="http://hackership.co/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/357/s100/hackership-ca-20logo.jpeg"></a><br>Hackership San Francisco</td>
-    	    	<td class="table_cell"><a href="http://www.academyx.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/496/s100/534060-490554834301336-1306359062-n.jpg"></a><br>Academy X</td>
-    	    	<td class="table_cell"><a href="http://www.codestreamlabs.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/523/s100/zp4k3njq.png"></a><br>CodeStream Labs</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="https://www.invasivecode.com/index.html"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/535/s100/539484-357095604381777-623183327-n.png"></a><br>iNVASIVECODE</td>
-    	    	<td class="table_cell"><a href="http://codifyacademy.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/631/s100/codifyacademylogo.png"></a><br>Codify Academy</td>
-    	    	<td class="table_cell"><a href="http://www.tradecrafted.com/"><img class="bootcamp_logo" src="https://pbs.twimg.com/profile_images/556180875230982144/56ij2vrb.jpeg"></a><br>Tradecraft</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="http://www.makersquare.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/268/s100/makersquare-logo.png"></a><br>MakerSquare</td>
-    	    	<td class="table_cell"><a href="http://firebootcamp.com/"><img class="bootcamp_logo" src="https://pbs.twimg.com/profile_images/420608140619431936/BB9NLLfh.png"></a><br>Fire Bootcamp</td>
-    	    	<td class="table_cell"><a href="https://www.makeschool.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/154/s100/makegameswithus-logo.png"></a><br>Make School</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="http://marcademy.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/203/s100/marcademy-logo.jpeg"></a><br>Marcademy</td>
-    	    	<td class="table_cell"><a href="http://www.galvanize.com/courses/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/744/s100/1982192-823446997671475-891607919-n.png"></a><br>Galvanize</td>
-    	    	<td class="table_cell"><a href="http://mobilemakers.co/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/24/s100/mobile-makers-academy-logo.png"></a><br>Mobile Makers Academy</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="https://squareup.com/code-camp"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/380/s100/square-code-camps-logo.png"></a><br>Square Code Camp</td>
-    	    	<td class="table_cell"><a href="https://www.coursereport.com/schools/apprentice-io"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/529/s100/apprentice-150x150.png"></a><br>Apprentice.io</td>
-    	    	<td class="table_cell"><a href="http://www.anyonecanlearntocode.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/85/s100/anyone-can-learn-to-code-logo.png"></a><br>Anyone Can Learn To Code</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="https://www.thinkful.com/a/coursereport"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/484/s100/thinkful-logo-new.png"></a><br>Thinkful</td>
-    	    	<td class="table_cell"><a href="https://learntechlabs.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/655/s100/10991092-1557214664556952-1631320059625397375-n.jpg"></a><br>LearnTech Labs</td>
-    	    </tr>
-    	</table>
-    </div>
-
-
-    	<!-- COMPUTER -->
-    <div class="course_logo_div2">
-    	<div class="sf_courses2">
-    		<p><u>Write a review about your bootcamp</u></p>
-            <p><u> or view reviews by others!</u></p>
-    	</div>
-    	<table class="course_table2" style="width:70%">
-    	  	<tr>
-    	    	<td class="table_cell"><a href="http://devbootcamp.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/876/s100/dbc-t-profile-400x400px.jpg"></a><br>Dev Bootcamp</td>
-    	       <td class="table_cell"><%= link_to image_tag("https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/813/s100/ga-logo-2-compressor.png", class: "bootcamp_logo"), bootcamps_path(1) %><br>
-                General Assembly</td>
-    	    	<td class="table_cell"><a href="http://www.appacademy.io/#p-home"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/551/s100/margin-red-1000.png"></a><br>App Academy</td>
-    	    	<td class="table_cell"><%= link_to image_tag("https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/8/s100/hack-reactor-logo.png", class: "bootcamp_logo"), bootcamps_path(2) %><br>Hack Reactor</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="https://hackbrightacademy.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/84/s100/hackbright-academy-logo.jpg"></a><br>Hackbright Academy</td>
-    	    	<td class="table_cell"><a href="http://www.rocketu.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/11/s100/rocket-u-logo.png"></a><br>Rocket U</td>
-    	    	<td class="table_cell"><a href="https://codepath.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/60/s100/codepath-logo.png"></a><br>CodePath</td>
-    	    	<td class="table_cell"><a href="http://www.zipfianacademy.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/53/s100/zipfian-academy-logo.png"></a><br>Zipfian Academy</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="http://www.codingdojo.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/818/s100/codingdojo-coursereport-final2.png"></a><br>Coding Dojo</td>
-    	    	<td class="table_cell"><a href="https://www.bignerdranch.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/420/s100/big-20nerd-20ranch-20logo.jpeg"></a><br>Big Nerd Ranch</td>
-    	    	<td class="table_cell"><a href="http://www.joinkoru.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/449/s100/koru-logo.png"></a><br>Koru</td>
-    	    	<td class="table_cell"><a href="http://www.hackercodingacademy.com/"><img class="bootcamp_logo" src="http://www.bootcamps.in/wp-content/uploads/2014/12/Hacker-coding-academy.png"></a><br>Hacker Coding Academy</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="https://www.codercamps.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/907/s100/coder-camps-logo.png"></a><br>Coder Camps</td>
-    	    	<td class="table_cell"><a href="http://www.thisismetis.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/75/s100/metis-logo.png"></a><br>Metis</td>
-    	    	<td class="table_cell"><a href="http://www.productschool.com/"><img class="bootcamp_logo" src="http://photos1.meetupstatic.com/photos/event/8/6/f/d/global_441574557.jpeg"></a><br>Product School</td>
-    	    	<td class="table_cell"><a href="http://hackership.co/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/357/s100/hackership-ca-20logo.jpeg"></a><br>Hackership San Francisco</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="http://www.academyx.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/496/s100/534060-490554834301336-1306359062-n.jpg"></a><br>Academy X</td>
-    	    	<td class="table_cell"><a href="http://www.codestreamlabs.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/523/s100/zp4k3njq.png"></a><br>CodeStream Labs</td>
-    	    	<td class="table_cell"><a href="https://www.invasivecode.com/index.html"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/535/s100/539484-357095604381777-623183327-n.png"></a><br>iNVASIVECODE</td>
-    	    	<td class="table_cell"><a href="http://codifyacademy.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/631/s100/codifyacademylogo.png"></a><br>Codify Academy</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="http://www.tradecrafted.com/"><img class="bootcamp_logo" src="https://pbs.twimg.com/profile_images/556180875230982144/56ij2vrb.jpeg"></a><br>Tradecraft</td>
-    	    	<td class="table_cell"><a href="http://www.makersquare.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/268/s100/makersquare-logo.png"></a><br>MakerSquare</td>
-    	    	<td class="table_cell"><a href="http://firebootcamp.com/"><img class="bootcamp_logo" src="https://pbs.twimg.com/profile_images/420608140619431936/BB9NLLfh.png"></a><br>Fire Bootcamp</td>
-    	    	<td class="table_cell"><a href="https://www.makeschool.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/154/s100/makegameswithus-logo.png"></a><br>Make School</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="http://marcademy.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/203/s100/marcademy-logo.jpeg"></a><br>Marcademy</td>
-    	    	<td class="table_cell"><a href="http://www.galvanize.com/courses/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/744/s100/1982192-823446997671475-891607919-n.png"></a><br>Galvanize</td>
-    	    	<td class="table_cell"><a href="http://mobilemakers.co/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/24/s100/mobile-makers-academy-logo.png"></a><br>Mobile Makers Academy</td>
-    	    	<td class="table_cell"><a href="https://squareup.com/code-camp"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/380/s100/square-code-camps-logo.png"></a><br>Square Code Camp</td>
-    	    </tr>
-    	    <tr>
-    	    	<td class="table_cell"><a href="https://www.coursereport.com/schools/apprentice-io"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/529/s100/apprentice-150x150.png"></a><br>Apprentice.io</td>
-    	    	<td class="table_cell"><a href="http://www.anyonecanlearntocode.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/85/s100/anyone-can-learn-to-code-logo.png"></a><br>Anyone Can Learn To Code</td>
-    	    	<td class="table_cell"><a href="https://www.thinkful.com/a/coursereport"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/484/s100/thinkful-logo-new.png"></a><br>Thinkful</td>
-    	    	<td class="table_cell"><a href="https://learntechlabs.com/"><img class="bootcamp_logo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/655/s100/10991092-1557214664556952-1631320059625397375-n.jpg"></a><br>LearnTech Labs</td>
-    	    </tr>
-    	</table>
+    <div class="menu-wrap">
+        <nav class="menu">
+            <ul class="clearfix" style="width=300">
+                <li></li>
+                <li>
+                    <a class="dropdown_header" href="#">Review Your Bootcamp <span class="arrow">&#9660;</span></a>
+     
+                    <ul class="sub-menu">
+                        <li><%= link_to "Academy X", bootcamps_path(1) %></li>
+                        <li><%= link_to "Anyone Can Learn to Code", bootcamps_path(1) %></li>
+                        <li><%= link_to "App Accademy", bootcamps_path(1) %></li>
+                        <li><%= link_to "Apprentice.io", bootcamps_path(1) %></li>
+                        <li><%= link_to "Big Nerd Ranch", bootcamps_path(1) %></li>
+                        <li><%= link_to "CodePath", bootcamps_path(1) %></li>
+                        <li><%= link_to "Coder Camps", bootcamps_path(1) %></li>
+                        <li><%= link_to "CodeStream Labs", bootcamps_path(1) %></li>
+                        <li><%= link_to "Codify Academy", bootcamps_path(1) %></li>
+                        <li><%= link_to "Coding Dojo", bootcamps_path(1) %></li>
+                        <li><%= link_to "Dev Bootcamp", bootcamps_path(1) %></li>
+                        <li><%= link_to "Fire Bootcamp", bootcamps_path(1) %></li>
+                        <li><%= link_to "Galvanize", bootcamps_path(1) %></li>
+                        <li><%= link_to "General Assembly", bootcamps_path(1) %></li>
+                        <li><%= link_to "Hack Reactor", bootcamps_path(2) %></li>
+                        <li><%= link_to "Hackbright Academy", bootcamps_path(1) %></li>
+                        <li><%= link_to "Hacker Coding Academy", bootcamps_path(1) %></li>
+                        <li><%= link_to "Hackership San Francisco", bootcamps_path(1) %></li>
+                        <li><%= link_to "iNVASIVECODE", bootcamps_path(1) %></li>
+                        <li><%= link_to "Koru", bootcamps_path(1) %></li>
+                        <li><%= link_to "LearnTech Labs", bootcamps_path(1) %></li>
+                        <li><%= link_to "Make School", bootcamps_path(1) %></li>
+                        <li><%= link_to "MakerSquare", bootcamps_path(1) %></li>
+                        <li><%= link_to "Marcademy", bootcamps_path(1) %></li>
+                        <li><%= link_to "Metis", bootcamps_path(1) %></li>
+                        <li><%= link_to "Mobile Makers Academy", bootcamps_path(1) %></li>
+                        <li><%= link_to "Product School", bootcamps_path(1) %></li>
+                        <li><%= link_to "Rocket U", bootcamps_path(1) %></li>
+                        <li><%= link_to "Square Code Camp", bootcamps_path(1) %></li>
+                        <li><%= link_to "Thinkful", bootcamps_path(1) %></li>
+                        <li><%= link_to "Tradecraft", bootcamps_path(1) %></li>
+                        <li><%= link_to "Zipfian Academy", bootcamps_path(1) %></li>
+                    </ul>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
     </div>
 
 </body>
