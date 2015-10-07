@@ -8,8 +8,9 @@ class BootcampsController < ApplicationController
   def create
   end
 
+  # GET /bootcamps/:id
   def show
-    @bootcamp = Bootcamp.find_by_id(params[:id])
+    @bootcamp = Bootcamp.find params[:id]
     @user = current_user
   end
 
