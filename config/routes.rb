@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
 	get '/instructors', to: 'instructors#index'
 
-	get '/bootcamps/:id', to: 'bootcamps#show'
+	get '/bootcamps/:id', to: 'bootcamps#show', as: "bootcamps"
 
 	get '/bootcamps/:id/review', to: 'reviews#new'
 
@@ -23,4 +23,5 @@ Rails.application.routes.draw do
 	get "/users/:id", to: "bootcamps#show"
 
 	get '/bootcamp_reviews', to: "bootcamp_reviews#index"
+
 end
