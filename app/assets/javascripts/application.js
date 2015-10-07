@@ -33,7 +33,7 @@ $(document).ready(function() {
 	});
 
 	$("#slide1_button").click(function() {
-		scrollToAnchor('slide1');
+		scrollToAnchor('reviews');
 	});
 
 	$("#slide2_button").click(function() {
@@ -49,7 +49,7 @@ $(document).ready(function() {
 	});
 
 	submitReview();
-	
+
 
 });
 
@@ -70,12 +70,12 @@ function submitReview() {
 		data.worthit = worthIt();
 		data.campus = $('#campus-rate').val();
 		data.jobsupp = $('#job-supp-rate').val();
-		data.locationrate = $('#location-rate').val();  
+		data.locationrate = $('#location-rate').val();
 
 		$.post('/reviews', data).done(function(data) {
 			window.location.href = data;
 		});
-	})
+	});
 
 }
 
@@ -84,11 +84,11 @@ function jobStatus() {
 	if (document.getElementById('employed').checked) {
 		hired = 'Employed';
 	} else if (document.getElementById('not-employed').checked) {
-		hired = 'Not Employed'
+		hired = 'Not Employed';
 	} else if (document.getElementById('still-attending').checked){
-		hired = 'Still Attending'
+		hired = 'Still Attending';
 	} else if (document.getElementById('not-seeking-employment').checked){
-		hired = 'Not Seeking Employment'
+		hired = 'Not Seeking Employment';
 	}
 
 	return hired;
@@ -100,7 +100,7 @@ function worthIt() {
 		courseWorth = 'Yes';
 	} else if (document.getElementById('worth-it-no').checked) {
 		courseWorth = 'No';
-	} 
+	}
 
 	return courseWorth;
 }
