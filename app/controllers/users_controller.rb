@@ -9,9 +9,9 @@ class UsersController < ApplicationController
     userParams = params.require(:user).permit(:username, :email, :password)
     @user = User.new userParams
     if @user.save
+      login(@user)
       redirect_to root_path
     else
-      console.log("you done fucked up")
       redirect_to root_path
     end
   end
