@@ -8,7 +8,9 @@ class BootcampsController < ApplicationController
   def create
   end
 
+  # GET /bootcamps/:id
   def show
+    @bootcamp = Bootcamp.find params[:id]
   end
 
   def edit
