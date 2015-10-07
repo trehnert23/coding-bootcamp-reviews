@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 	get '/bootcamps/:id/review', to: 'reviews#new'
 
 	post '/reviews', to: 'reviews#create'
-	
+
 	get  '/reviews', to: 'reviews#show'
 
 	get "/sign_in", to: "sessions#new"
@@ -22,6 +22,6 @@ Rails.application.routes.draw do
 
 	get "/users/:id", to: "bootcamps#show"
 
-	get '/bootcamp_reviews', to: "bootcamp_reviews#index"
+	get '/bootcamp_reviews/:id', to: "bootcamp_reviews#index"
 
 end
