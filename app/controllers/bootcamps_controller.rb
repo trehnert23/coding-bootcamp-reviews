@@ -9,6 +9,8 @@ class BootcampsController < ApplicationController
   end
 
   def show
+    @bootcamp = Bootcamp.find_by_id(params[:id])
+    @user = current_user
   end
 
   def edit
