@@ -300,6 +300,7 @@
 @media screen and (min-width: 376px) {
     /*----- Menu Outline -----*/
     .dropdown_header {
+      white-space: nowrap;
       font-size: 30px;
       font-family: arial rounded mt bold;
       text-align: center;
@@ -311,9 +312,9 @@
     }
 
     .menu-wrap {
-        width:30%;
+        width:430px;
         border-radius: 5px;
-        margin-top: 15%;
+        margin-top: 5%;
         margin-left: 35%;
         box-shadow:0px 1px 3px rgba(0,0,0,0.2);
         background: white;
@@ -428,24 +429,11 @@
       animation: type 3s steps(60, end);
     }
 
-    p.css_text2{
-      color: white; 
-      font-family: arial rounded mt bold;
-      font-size: 75px;
-      margin: 10px 0 0 10px;
-      white-space: nowrap;
-      overflow: hidden;
-      width: 100%;
-      position: absolute;
+    p.css_text:nth-child(2){
       animation: type2 5s steps(60, end);
     }
 
-    span.typing_span1{
-      animation: blink 1s infinite;
-      color: white;
-    }
-
-    span.typing_span2{
+    span.typing_span{
       animation: blink 1s infinite;
       color: white;
     }

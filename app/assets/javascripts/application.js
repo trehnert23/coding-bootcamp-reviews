@@ -27,20 +27,6 @@ $(document).ready(function() {
 	//   }
 	// });
 
-	var texts = ["Academy X", "Anyone Can Learn to Code", "App Accademy", "Apprentice.io", "Big Nerd Ranch", "CodePath", "Coder Camps", "CodeStream Labs", "Codify Academy", "Coding Dojo", "Dev Bootcamp", "Fire Bootcamp", "Galvanize", "General Assembly", "Hack Reactor", "Hackbright Academy", "Hacker Coding Academy", "Hackership San Francisco", "iNVASIVECODE", "Koru", "LearnTech Labs", "Make School", "MakerSquare", "Marcademy", "Metis", "Mobile Makers Academy", "Product School", "Rocket U", "Square Code Camp", "Thinkful", "Tradecraft", "Zipfian Academy"]
-
-	function swapText(){
-	  return texts.pop()
-	}
-
-	setTimeout(function(){
-	   setInterval(function(){
-	   		$(".typing_span1").empty()
-	        $(".css_text2").empty().html(swapText() + "<span class='typing_span2'>|</span>")
-	    }, 2000)
-	})
-
-
 
 	$("#home_link").click(function() {
 		scrollToAnchor('home_link');
