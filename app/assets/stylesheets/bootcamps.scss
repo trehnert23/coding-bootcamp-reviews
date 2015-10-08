@@ -1,18 +1,45 @@
 
-
 /*----------------------------------------------*/
-              /*Melissa's CSS*/
+              /*Bootcamp Nav CSS*/
 /*----------------------------------------------*/
 
-.user-photo img {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
+.home_nav_button > li > button {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  border: none;
+  font-size: 30px;
+  outline: none;
 }
 
-.user-review-info {
-  text-align: center;
+.home_brand .bootcamp_brand {
+    margin-left: -35px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
 }
+
+.home_nav_button > li > button:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: rgb(128,128,128);
+}
+
+@media screen and (max-width: 375px) {
+    #myNavbar {
+     background-color: black;
+    }
+}
+
+
+
+/*----------------------------------------------*/
+              /* Header */
+/*----------------------------------------------*/
+
 
 header {
     text-align: center;
@@ -38,6 +65,11 @@ header .intro-text .name {
     font-weight: 700;
 }
 
+.name {
+  text-align: center;
+  font-size: 50px !important ;
+}
+
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
@@ -53,19 +85,6 @@ header .intro-text .skills {
   background-color: red;
   position: relative;
   display: inline-block;
-}
-
-#review {
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-.column {
-  text-align: left;
-  text-decoration: none;
-}
-
-.under li {
-  display: inline;
 }
 
 .header-image {
@@ -85,11 +104,51 @@ header .intro-text .skills {
   padding-right: 50px;
 }
 
+#review-button {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  float: center;
+}
+
+
+/*----------------------------------------------*/
+              /* Reviews */
+/*----------------------------------------------*/
+
+
+.user-photo img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.user-review-info {
+  text-align: center;
+}
+
+
+#review {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.column {
+  text-align: left;
+  text-decoration: none;
+}
+
+.under li {
+  display: inline;
+}
+
+
 .rating-boxes {
   padding: 20px 10px 20px 10px;
   border: solid white 1px;
   color: #fff;
   background-color: #18bc9c;
+/*  max-width: 130px;
+  max-height: 80px;*/
 }
 
 .review {
@@ -103,6 +162,7 @@ header .intro-text .skills {
 .more hover {
   background-color: yellow;
 }
+
 
 
 
@@ -356,39 +416,6 @@ footer .bar-wrap {
     }
 }
 
-/*----------------------------------------------*/
-              /*Bootcamp Nav CSS*/
-/*----------------------------------------------*/
-
-.home_nav_button > li > button {
-  background-color: transparent;
-  text-decoration: none;
-  color: white;
-  border: none;
-  font-size: 30px;
-  outline: none;
-}
-
-.home_brand .bootcamp_brand {
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
-    background-color: transparent;
-    border: transparent;
-    outline: none;
-}
-
-.home_nav_button > li > button:hover {
-  text-decoration: none;
-  background-color: transparent;
-  color: rgb(128,128,128);
-}
-
-@media screen and (max-width: 375px) {
-    #myNavbar {
-     background-color: black;
-    }
-}
 
 
 
