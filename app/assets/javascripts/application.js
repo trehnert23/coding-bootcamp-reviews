@@ -49,6 +49,7 @@ $(document).ready(function() {
 	});
 
 	submitReview();
+	editReview();
 
 
 });
@@ -103,4 +104,31 @@ function worthIt() {
 	}
 
 	return courseWorth;
+}
+
+function editReview() {
+	$(".edit_bootcamp_review").submit(function(e) {
+		e.preventDefault();
+
+		var bcReviewId = window.location.pathname.split("/")[2];
+
+		var bootcamp_review = {};
+		bootcamp_review.content = $('#bootcamp_review_content').val();
+		bootcamp_review.hired = jobStatus();
+		bootcamp_review.worthit = worthIt();
+		bootcamp_review.campus = $('#bootcamp_review_campus').val();
+		bootcamp_review.jobhelp = $('#bootcamp_review_jobhelp').val();
+		bootcamp_review.location = $('#bootcamp_review_location').val();
+
+		
+		$.ajax({
+			type: 'PATCH',
+			url: '/bootcamp_reviews/' + bcReviewId + '/edit',
+			data: bootcamp_review
+
+		}).done(function(data) {
+			window.location.href = data;
+			// console.log(data);
+		});
+	})
 }

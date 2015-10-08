@@ -13,10 +13,8 @@ class BootcampsController < ApplicationController
 
 
   def show
-    @bootcamp = Bootcamp.find(params[:id])
-    @bootcamp_user = User.find_by_id(Bootcamp.first.bootcamp_reviews.last.user_id).username
-    @i = 0
-    @reviewsLength = @bootcamp.bootcamp_reviews.length - 1
+    get_bootcamp
+    get_reviews
   end
 
   def edit
@@ -27,4 +25,15 @@ class BootcampsController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def get_bootcamp
+    @bootcamp = Bootcamp.find_by_id(params[:id])
+  end
+
+  def get_reviews
+    @bootcampReviews = BootcampReview.top_six
+  end
+
 end
