@@ -7,14 +7,22 @@ class UsersController < ApplicationController
 
   def create
     userParams = params.require(:user).permit(:username, :email, :password)
-    User.create(userParams)
-    redirect_to root_path
+    @user = User.new userParams
+    if @user.save
+      login(@user)
+      redirect_to "/"
+    else
+      redirect_to "/"
+    end
   end
 
   def show
+    @user = User.find_by_id(params[:id])
   end
 
   def edit
+    id = params[:id]
+    @user = User.find_by_id(id)
   end
 
   def update

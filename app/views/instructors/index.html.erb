@@ -1,0 +1,9 @@
+<h1>Isntructors#index</h1>
+<p>Find me in app/views/isntructors/index.html.erb</p>
+
+<% form_tag instructor_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<%end>

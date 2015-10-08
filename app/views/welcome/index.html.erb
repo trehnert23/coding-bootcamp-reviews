@@ -1,25 +1,64 @@
-<h1>There are <%= @users.length %> users signed up!</h1>
-<%= text_field_tag 'home-search', nil, placeholder: 'Search ... ' %>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+<body class="home_body">
+    <%= render 'partials/nav_home' %>
+    <%= render 'partials/login_modal' %>
+    <%= render 'partials/signup_modal' %>
+    <div class="homepage_top_image">
+    	<img class="homepage_image" src="https://images.unsplash.com/7/Top_view.jpg?q=80&fm=jpg&s=4afed7e6e559be491437a10cec9120a8">
+    </div>
 
-<a data-toggle="modal" href="#signup-modal" class="btn btn-default">Sign Up</a>
+    <div class="blurb_div">
+    	<p class="css_text">View, find, and review the</p>
+    	<p class="css_text"> best bootcamp for you!<span class="typing_span">|</span></p>
+    </div>
 
-<div id="signup-modal" class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title">Sign-Up</h4>
-      </div>
-      <div class="modal-body">
-      	<div class="signup-wrapper">
-      		 <%= form_for @user do |f| %>
-        <%= f.email_field :email, class: "new-user-form", placeholder: 'email123@domain.com' %>
-        <%= f.text_field :username, class: "new-user-form", placeholder: 'username' %>
-        <%= f.password_field :password, class: "new-user-form", placeholder: 'password' %>
-        <%= f.submit 'Sign Up', id: "signup-button", class: 'btn btn-default text-center'%>
-        <% end %>
-      	</div>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+
+    <div class="menu-wrap">
+        <nav class="menu">
+            <ul class="clearfix" style="width=300">
+                <li>
+                    <a class="dropdown_header" href="#">Review Your Bootcamp <span class="arrow">&#9660;</span></a>
+     
+                    <ul class="sub-menu">
+                        <li data-no-turbolink="true"><%= link_to "Academy X", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Anyone Can Learn to Code", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "App Accademy", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Apprentice.io", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Big Nerd Ranch", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "CodePath", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Coder Camps", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "CodeStream Labs", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Codify Academy", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Coding Dojo", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Dev Bootcamp", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Fire Bootcamp", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Galvanize", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "General Assembly", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Hack Reactor", bootcamps_path(2) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Hackbright Academy", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Hacker Coding Academy", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Hackership San Francisco", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "iNVASIVECODE", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Koru", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "LearnTech Labs", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Make School", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "MakerSquare", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Marcademy", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Metis", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Mobile Makers Academy", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Product School", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Rocket U", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Square Code Camp", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Thinkful", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Tradecraft", bootcamps_path(1) %></li>
+                        <li data-no-turbolink="true"><%= link_to "Zipfian Academy", bootcamps_path(1) %></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+</body>
