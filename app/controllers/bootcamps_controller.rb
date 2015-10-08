@@ -13,8 +13,8 @@ class BootcampsController < ApplicationController
 
 
   def show
-    @bootcamp = Bootcamp.find_by_id(params[:id])
-    @bootcampReviews = BootcampReview.order(created_at: :desc).limit(6)
+    get_bootcamp
+    get_reviews
   end
 
   def edit
@@ -25,4 +25,15 @@ class BootcampsController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def get_bootcamp
+    @bootcamp = Bootcamp.find_by_id(params[:id])
+  end
+
+  def get_reviews
+    @bootcampReviews = BootcampReview.top_six
+  end
+
 end
