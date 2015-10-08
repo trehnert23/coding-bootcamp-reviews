@@ -1,44 +1,9 @@
-
-
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <img class="img-responsive" src="https://images.unsplash.com/19/desktop.JPG?q=80&fm=jpg&s=10cf10aead07bd0897cc50bccc63ac07" alt="">
-            </div>
-                <div class="col-lg-4 intro-text">
-                    <span class="name"><%= @bootcamp.name %></span>
-                    <hr class="star-light">
-	                    <div class="bootcamp-info">
-	                    	<ul class="column top" style="list-style:none;">
-
-	                    			<li><%= @bootcamp.address %></li>
-	                    			<li><%= @bootcamp.url %></li>
-	                    			<li><%= @bootcamp.phone %></li>
-	                    			<li><%= @bootcamp.email %></li>
-	                    	</ul>
-
-	                    	<ul class="column under" style="list-style:none;">
-	                    		<h4>Courses offered</h4>
-	                    			<li><% @bootcamp.courses.split("|").each do | course |  %></li>
-	                    			<li> <%= course %> </li>
-	                    			<% end %>
-
-	                    	</ul>
-	                    </div>
-        		</div>
-        </div>
-
-    <hr class="star-light">
-
-<a type="button" class="btn btn-default" href="/bootcamps/<%= @bootcamp.id %>/review" data-no-turbolink="true">Submit a Review!</a>
-
-<a type="button" class="btn btn-default" href="/bootcamp_reviews/<%= @bootcamp.id %>" data-no-turbolink="true">Read All Reviews</a>
-
-</header>
-
 <!--Partials Nav bar-->
 <%= render 'partials/nav_show' %>
+
+<%= render 'partials/header_reviews' %>
+
+
 <a name="reviews"></a>
 
 
@@ -46,6 +11,7 @@
 <div class="container">
 	<div class="row">
 		<h1>Reviews</h1>
+		
 		<div class="col-lg-10 col-sm-12">
 
 		 <% 6.times do |i| %>
@@ -99,18 +65,4 @@
 
 <%= render "partials/footer_show" %>
 
-<div class="footer text-center">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4">
-				<h3>About Us</h3>
-			</div>
-			<div class="col-lg-4">
-				<h3>Let's get social</h3>
-			</div>
-			<div class="col-lg-4">
-				<h3>Location</h3>
-			</div>
-		</div>
-	</div>
-</div>
+

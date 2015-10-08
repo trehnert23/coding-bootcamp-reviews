@@ -1,15 +1,17 @@
-<h1>BootcampReview#edit</h1>
-<p>Find me in app/views/bootcamp_review/edit.html.erb</p>
+<!--Partials Nav bar-->
+<%= render 'partials/nav_show' %>
 
-<%= form_for @bootcamp_review do |f| %>
+<header>
+  <h1>Write a Bootcamp Review</h1>
+</header>
 
-<%= f.text_area :content, cols: 50, rows: 10 %>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12" id="review-form">
+      <div class="the-form">
+        <%= form_for @bootcamp_review do |f| %>
 
-<label>
-
-
-
-</label>
+<h3>What was your overall experience at this bootcamp?</h3> <%= f.text_area :content, cols: 50, rows: 10 %>
 
 <h3>Did you find employment after graduation?</h3>
 		<div class="radio">
@@ -42,3 +44,17 @@
 		
 		
 <% end %>
+      
+
+<!-- <form id="instructor-review-form">
+	<textarea cols="30" rows="5" id="instructor-review-form" name="instructor_review[text]" placeholder='Instructor'></textarea>
+</form> -->
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Footer-->
+<%= render "partials/footer_show" %>
