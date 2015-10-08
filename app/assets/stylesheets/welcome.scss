@@ -300,6 +300,7 @@
 @media screen and (min-width: 376px) {
     /*----- Menu Outline -----*/
     .dropdown_header {
+      white-space: nowrap;
       font-size: 30px;
       font-family: arial rounded mt bold;
       text-align: center;
@@ -311,7 +312,7 @@
     }
 
     .menu-wrap {
-        width:30%;
+        width:430px;
         border-radius: 5px;
         margin-top: 5%;
         margin-left: 35%;
@@ -425,7 +426,7 @@
       white-space: nowrap;
       overflow: hidden;
       width: 100%;
-      animation: type 3s steps(60, end); 
+      animation: type 3s steps(60, end);
     }
 
     p.css_text:nth-child(2){
