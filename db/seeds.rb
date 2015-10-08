@@ -1,4 +1,4 @@
-require 'ffaker'
+require 'Ffaker'
 
 ga = Bootcamp.create(name: 'General Assembly - SF', email: 'sf@generalassemb.ly', phone: '+1 (415) 592-6885', url: 'https://generalassemb.ly/san-francisco', photo: 'http://static1.squarespace.com/static/522d5bfee4b090a2d482afb3/t/53eac34be4b0a70179a4fee6/1407894347951/General+Assembly+Logo', address: '5th Floor, 225 Bush St, San Francisco, CA 94104', information: 'General Assembly is a global network of campuses for technology, business, and design. General Assembly offers many different ways to learn important skills taught by top practitioners with real-world experience.', faq: 'https://generalassemb.ly/faq', courses: 'Web Development Immersive| User Expereience Design Immersive| Product Management Immersive| Back End Web Development| Visual Design| Data Science| Front End Web Development| Digital Marketing| Mobile Development')
 
