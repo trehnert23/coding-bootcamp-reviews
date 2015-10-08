@@ -4,9 +4,9 @@ ga = Bootcamp.create(name: 'General Assembly - SF', email: 'sf@generalassemb.ly'
 
 hr = Bootcamp.create(name: 'Hack Reactor', email: 'admissions@hackreactor.com', phone: '+1 (415) 547-0254', url: 'http://www.hackreactor.com/', photo: 'http://code-ninja.co/images/blog/Hack-Reactor-Blog.png', address: '944 Market St #8, San Francisco, CA 94102', information: 'You’ll begin Hack Reactor with a feeling of excitement and anticipation. Twelve weeks later, you’ll follow the footsteps of our trailblazing alumni, taking the methodologies and best practices you perfected at our coding bootcamp to your next job. We’ve built world class software engineering curriculum and programming courses. However, Hack Reactor is, above all else, a world-class learning environment.', faq: 'http://www.hackreactor.com/questions', courses: 'Full Stack Web Development')
 
-answer = ['yes', 'no', 'still attending', 'not looking']
+answer = ['Employed', 'Not Employed', 'Still Attending', 'Not Seeking Employment']
 
-worth = ['yes', 'no']
+worth = ['Yes', 'No']
 
 bc = [ga, hr]
  

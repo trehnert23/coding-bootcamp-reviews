@@ -12,6 +12,8 @@ class BootcampReviewsController < ApplicationController
   end
 
   def edit
+    id = params[:id]
+    @bootcamp_review = BootcampReview.find_by_id(id)
   end
 
   def update

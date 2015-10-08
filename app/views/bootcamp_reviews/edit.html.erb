@@ -1,2 +1,44 @@
 <h1>BootcampReview#edit</h1>
 <p>Find me in app/views/bootcamp_review/edit.html.erb</p>
+
+<%= form_for @bootcamp_review do |f| %>
+
+<%= f.text_area :content, cols: 50, rows: 10 %>
+
+<label>
+
+
+
+</label>
+
+<h3>Did you find employment after graduation?</h3>
+		<div class="radio">
+  		  <label><%= f.radio_button :worthit, :content %>Employed</label>
+  		</div>
+  		<div class="radio">
+  		  <label><input type="radio" name="employment" id="not-employed" <% if @bootcamp_review.hired == "Not Employed"%>checked="checked" <% end %>>Not Employed</label>
+  		</div>
+  		<div class="radio">
+  		  <label><input type="radio" name="employment" id="still-attending" <% if @bootcamp_review.hired == "Still Attending"%> checked="checked"<% end %>>Still Attending</label>
+  		</div>
+  		<div class="radio">
+  		  <label><input type="radio" name="employment" id="not-seeking-employment" <% if @bootcamp_review.hired == "Not Seeking Employment"%> checked="checked" <% end %>>Not Seeking Employment</label>
+  		</div>
+
+  	  <h3>Was the course worth the tuition?</h3>
+      <div class="radio">
+  		  <label><input type="radio" name="worth" id="worth-it-yes" <% if @bootcamp_review.worthit == "Yes" %> checked="checked" <% end %>>Yes</label>
+  		</div>
+  		<div class="radio">
+  		  <label><input type="radio" name="worth" id="worth-it-no" <% if @bootcamp_review.worthit == "No" %> checked="checked" <% end %>>No</label>
+		</div>
+
+		<h3>On a scale of 1 - 10, how would you rate...?</h3>   		
+  		<p>Facilities/Campus <%= f.number_field :campus %></p>
+  		<p>Job Support & Career Services <%= f.number_field :location %></p>
+  		<p>Location <%= f.number_field :jobhelp %></p>
+
+		
+		
+		
+<% end %>

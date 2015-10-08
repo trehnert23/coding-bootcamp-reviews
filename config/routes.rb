@@ -22,6 +22,10 @@ Rails.application.routes.draw do
 
 	get "/users/:id", to: "users#show"
 
+	get "/bootcamp_reviews/:id/edit", to: "bootcamp_reviews#edit", as: "bootcamp_review"
+
+	patch "/bootcamp_reviews/:id/edit", to: "bootcamp_reviews#update"
+
 	get '/bootcamp_reviews/:id', to: "bootcamp_reviews#index"
 
 end
