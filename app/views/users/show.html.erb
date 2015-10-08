@@ -26,11 +26,11 @@
 					<%= current_user.id %>
 					<% if !!current_user %>
 					<% if current_user.id == review.user_id %>
-					<h5 class="more"><a href="/bootcamp_reviews/<%= review.id %>/edit" class="button">Edit review... </a></h5>
+					<h5 class="more"><a href="/bootcamp_reviews/<%= review.id %>/edit" data-no-turbolink="true" class="button">Edit review... </a></h5>
 					<% end %>
 					<% end %>
 
-					<h5 class="more"><a href="#" class="button">Read More...</a></h5>
+					<h5 class="more"><a href="#" class="button" data-no-turbolink="true">Read More...</a></h5>
 				</div>
 			</div>
 
