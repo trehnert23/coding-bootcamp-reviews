@@ -41,75 +41,80 @@
 /*----------------------------------------------*/
 
 
+
 header {
-    text-align: center;
     color: #fff;
     background: #18bc9c;
+    padding-left: 0px !important;
 }
 
 header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 5%;
+    padding-bottom: 3%;
 }
 
-header img {
-    display: block;
-    margin: 0 auto 20px;
-}
-
-header .intro-text .name {
-    display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
-    font-weight: 700;
-}
-
-.name {
-  text-align: center;
-  font-size: 50px !important ;
-}
-
-header .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 300;
+#bootcamp-logo {
+  width: 224px;
+  height: 170px;
+  max-width: 224px;
+  max-height: 170px;
+  background-color: white;
+  border-radius: 5%;
+  padding: 5px;
+  border: solid grey 5px;
 }
 
 .img-responsive {
-  max-width: 200px;
-  max-height: 200px;
-  border: solid white 10px;
-
-}
-.bootcamp-header {
-  background-color: red;
+  max-width: 150px;
+  max-height: 150px;
   position: relative;
-  display: inline-block;
-}
-
-.header-image {
-  position: absolute;
-  width: 100%;
-}
-
-.bootcamp-photo {
-  position: absolute;
-  width: 100%;
-  float: left;
+  padding-left: 20%;
 
 }
 
-.bootcamp-info {
-  float: left;
-  padding-right: 50px;
+.name {
+  font-size: 35px !important;
+  padding-bottom: 30px !important;
+
 }
 
-#review-button {
-  margin-left: auto;
-  margin-right: auto;
+.fa {
+  color: yellow;
+  padding-right: 10px;
+}
+
+.top {
+  margin-top: 20px !important;
+}
+
+.rating {
+  margin-top: -20px;
+}
+
+#overallRating {
+  background-color: white;
+  color: #18bc9c;
   text-align: center;
-  float: center;
+  width: 224px;
+  height: 170px;
+  max-width: 224px;
+  max-height: 170px;
+  border-radius: 5%;
+  border: solid grey 5px;
 }
+
+.rating-number {
+  font-size: 70px;
+  color: gray;
+
+}
+
+.rating-desc {
+  font-size: 20px;
+  color: gray;
+
+}
+
 
 
 /*----------------------------------------------*/

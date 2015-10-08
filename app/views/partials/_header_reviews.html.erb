@@ -1,39 +1,89 @@
 
 <header>
-    <div class="container">
+    <div class="container wrapper">
+      <div class="inner_content">
         <div class="row">
 
-          <!--Bootcamp Image-->
-            <div class="col-lg-4">
-                <!-- <img class="img-responsive" src="https://images.unsplash.com/19/desktop.JPG?q=80&fm=jpg&s=10cf10aead07bd0897cc50bccc63ac07" alt=""> -->
-            </div>
+          <!--Bootcamp Logo-->
+          <div class="col-lg-3">
+            <div class="fadeindown animated fadeInDown imageCrop" id="bootcamp-logo">
+              <img id="imgUserProfile" class="th img-responsive" src="http://static1.squarespace.com/static/522d5bfee4b090a2d482afb3/t/53eac34be4b0a70179a4fee6/1407894347951/General+Assembly+Logo">
 
-              <!--Bootcamp Info-->
-                <div class="col-lg-8 intro-text">
-                    <span class="name"><%= @bootcamp.name %></span>
-                    <hr class="star-light">
-                    <div class="col-lg-9">
-                      <div class="bootcamp-info">
-                        <ul class="column top" style="list-style:none;">
-                            <li><%= @bootcamp.address %></li>
-                            <li><%= @bootcamp.url %></li>
-                            <li><%= @bootcamp.phone %></li>
-                            <li><%= @bootcamp.email %></li>
-                        </ul>
-                        <ul class="column under" style="list-style:none;">
-                          <h4>Courses offered</h4>
-                            <li><% @bootcamp.courses.split("|").each do | course |  %></li>
-                            <li> <%= course %> </li>
-                            <% end %>
-                        </ul>
-                      </div>
-                  </div>
             </div>
+          </div>
+          <!--Bootcamp Info-->
+          <div class="col-lg-4">
+            <span class="name"><%= @bootcamp.name %></span>
+            <br>
+              <ul class="column top" style="list-style:none;">
+                <li><i class="fa fa-map-marker"></i><%= @bootcamp.address %></li>
+                <li><i class="fa fa-link"></i><%= @bootcamp.url %></li>
+                <li><i class="fa fa-phone"></i><%= @bootcamp.phone %></li>
+                <li><i class="fa fa-envelope"></i><%= @bootcamp.email %></li>
+              </ul>
+            <br>
+                <a type="button" class="btn btn-lg btn-danger" href="/bootcamps/<%= @bootcamp.id %>/review" data-no-turbolink="true">Submit a Review!</a>
+                <a type="button" class="btn btn-lg btn-warning" href="/bootcamp_reviews/<%= @bootcamp.id %>" data-no-turbolink="true">Read All Reviews</a>
+          </div>
+          <div class="col-lg-5">
+
+            <!--Review bars-->                  
+            <h2>Rating Breakdown</h2>
+              <div class="progress">
+                <div id="staffRating" class="bar ratingAverage" data-percentage="65" style="width: 65%;">65%</div>
+              </div>
+              <small>STAFF</small>
+
+             <div class="progress">
+                 <div id="propertyRating" class="bar ratingAverage" data-percentage="65" style="width: 65%;">65%</div>
+             </div>
+             <small>PROPERTY</small>
+
+            <div class="progress">
+                <div id="valueForMoneyRating" class="bar ratingAverage" data-percentage="65" style="width: 65%;">65%</div>
+            </div>
+            <small>VALUE FOR MONEY</small>
+         </div>
         </div>
+
 
     <hr class="star-light">
       
-      <h3>Totals</h3>
+      
+
+
+    <!--Header buttons-->
+    <div class="col-lg-12" id="review-button">
+        <a type="button" class="btn btn-default" href="/bootcamps/<%= @bootcamp.id %>/review" data-no-turbolink="true">Submit a Review!</a>
+        <a type="button" class="btn btn-default" href="/bootcamp_reviews/<%= @bootcamp.id %>" data-no-turbolink="true">Read All Reviews</a>
+      </div>
+
+        <!--Overall Score -->
+        <div class="row">
+          <div class="col-lg-3 rating">
+              <div id="overallRating" class="th">
+                <div id="lblRating">
+                  <span class="rating-number">91</span>
+                  <br>
+                  <span class="rating-desc">Overall Rating</span>
+                </div>
+                <br>
+                  <div id="lblRatingLabel">
+                  </div>
+              </div>
+          </div>
+
+
+          <!--Courses Offered-->
+          <div class="col-lg-9">
+            <h2>Courses Offered</h2>
+              <% @bootcamp.courses.split("|").each do | course |  %>
+              <%= course %>
+              <% end %>
+          </div>
+        </div>
+
+        <h3>Totals</h3>
       Location: <%= @bootcamp.locationTotal %> <br>
       Job Help: <%= @bootcamp.jobhelpTotal%> <br>
       Campus: <%= @bootcamp.campusTotal%> <br><br>
@@ -66,13 +116,5 @@
       Job Help: <%= @bootcamp.jobhelpAvg %><br>
       Campus: <%= @bootcamp.campusAvg %><br><br>
 
-      Overall Average: <%= @bootcamp.overallAvg %>
-
-
-    <!--Header buttons-->
-    <div class="col-lg-12" id="review-button">
-        <a type="button" class="btn btn-default" href="/bootcamps/<%= @bootcamp.id %>/review" data-no-turbolink="true">Submit a Review!</a>
-        <a type="button" class="btn btn-default" href="/bootcamp_reviews/<%= @bootcamp.id %>" data-no-turbolink="true">Read All Reviews</a>
-      </div>
-
+      Overall Average: <%= @bootcamp.overallAvg %>               
 </header>
