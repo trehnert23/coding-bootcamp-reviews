@@ -1,0 +1,30 @@
+/*COMPUTER*/
+@media screen and (min-width: 376px) {
+
+	.edit_button {
+		margin-left: 80%;
+	}
+
+	.read_button {
+		margin-left: 80%;
+		margin-top: 30px;
+	}
+
+}
+
+
+/*PHONE*/
+@media screen and (max-width: 375px) {
+
+	.edit_button {
+		margin-top: 10%;
+		margin-left: 5%;
+	}
+
+	.read_button {
+		margin-left: 5%;
+		margin-top: 25px;
+		margin-bottom: 50px;
+	}
+
+}
