@@ -86,33 +86,33 @@
         position: absolute;
         z-index: 1;
     }
-     
+
     .menu {
         width:99%;
         margin:0px auto;
     }
-     
+
     .menu li {
         margin:0px;
         list-style:none;
         font-family:'Ek Mukta';
     }
-     
+
     .menu a {
         transition:all linear 0.15s;
         color:#919191;
     }
-     
+
     .menu li:hover > a, .menu .current-item > a {
         text-decoration:none;
         color: grey;
     }
-     
+
     .menu .arrow {
         font-size:11px;
         line-height:0%;
     }
-     
+
     /*----- Top Level -----*/
     .menu > ul > li {
         float:left;
@@ -120,24 +120,24 @@
         position:relative;
         font-size:19px;
     }
-     
+
     .menu > ul > li > a {
         padding:10px 40px;
         display:inline-block;
         text-shadow:0px 1px 0px rgba(0,0,0,0.4);
     }
-     
+
     .menu > ul > li:hover > a, .menu > ul > .current-item > a {
         background: white;
         border-radius: 5px;
     }
-     
+
     /*----- Bottom Level -----*/
     .menu li:hover .sub-menu {
         z-index: -1;
         opacity:1;
     }
-     
+
     .sub-menu {
         width: 370px;
         padding:5px 0px;
@@ -157,18 +157,18 @@
         -moz-columns: 3;
         list-style-position: inside;
     }
-     
+
     .sub-menu li {
         display:block;
         font-size:16px;
     }
-     
+
     .sub-menu li a {
         padding:10px 20px;
         display:block;
         font-size: 15px;
     }
-     
+
     .sub-menu li a:hover, .sub-menu .current-item a {
         background:#3e3436;
     }
@@ -183,14 +183,14 @@
     }
 
     p.css_text{
-      color: white; 
+      color: white;
       font-family: arial rounded mt bold;
       font-size: 25px;
       margin: 10px 0 0 10px;
       white-space: nowrap;
       overflow: hidden;
       width: 350px;
-      animation: type 3s steps(60, end); 
+      animation: type 3s steps(60, end);
     }
 
     p.css_text:nth-child(2){
@@ -202,15 +202,15 @@
       color: white;
     }
 
-    @keyframes type{ 
-      from { width: 0; } 
-    } 
+    @keyframes type{
+      from { width: 0; }
+    }
 
     @keyframes type2{
       0%{width: 0;}
       50%{width: 0;}
-      100%{ width: 100; } 
-    } 
+      100%{ width: 100; }
+    }
 
     @keyframes blink{
       to{opacity: .0;}
@@ -321,33 +321,33 @@
         position: relative;
         z-index: 1;
     }
-     
+
     .menu {
         width:1000px;
         margin:0px auto;
     }
-     
+
     .menu li {
         margin:0px;
         list-style:none;
         font-family:'Ek Mukta';
     }
-     
+
     .menu a {
         transition:all linear 0.15s;
         color:#919191;
     }
-     
+
     .menu li:hover > a, .menu .current-item > a {
         text-decoration:none;
         color: grey;
     }
-     
+
     .menu .arrow {
         font-size:11px;
         line-height:0%;
     }
-     
+
     /*----- Top Level -----*/
     .menu > ul > li {
         float:left;
@@ -355,24 +355,24 @@
         position:relative;
         font-size:19px;
     }
-     
+
     .menu > ul > li > a {
         padding:10px 40px;
         display:inline-block;
         text-shadow:0px 1px 0px rgba(0,0,0,0.4);
     }
-     
+
     .menu > ul > li:hover > a, .menu > ul > .current-item > a {
         background: white;
         border-radius: 5px;
     }
-     
+
     /*----- Bottom Level -----*/
     .menu li:hover .sub-menu {
         z-index: -1;
         opacity:1;
     }
-     
+
     .sub-menu {
         width:700px;
         padding:5px 0px;
@@ -392,17 +392,17 @@
         -moz-columns: 4;
         list-style-position: inside;//this is important addition
     }
-     
+
     .sub-menu li {
         display:block;
         font-size:16px;
     }
-     
+
     .sub-menu li a {
         padding:10px 30px;
         display:block;
     }
-     
+
     .sub-menu li a:hover, .sub-menu .current-item a {
         background:#3e3436;
     }
@@ -419,7 +419,7 @@
     }
 
     p.css_text{
-      color: white; 
+      color: white;
       font-family: arial rounded mt bold;
       font-size: 75px;
       margin: 10px 0 0 10px;
@@ -438,15 +438,15 @@
       color: white;
     }
 
-    @keyframes type{ 
-      from { width: 0; } 
-    } 
+    @keyframes type{
+      from { width: 0; }
+    }
 
     @keyframes type2{
       0%{width: 0;}
       50%{width: 0;}
-      100%{ width: 100; } 
-    } 
+      100%{ width: 100; }
+    }
 
     @keyframes blink{
       to{opacity: .0;}
@@ -527,9 +527,3 @@
     }
 
 }
-
-
-
-
-
-
