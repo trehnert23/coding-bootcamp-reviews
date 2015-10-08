@@ -9,7 +9,7 @@ answer = ['yes', 'no', 'still attending', 'not looking']
 worth = ['yes', 'no']
 
 bc = [ga, hr]
- 
+
 
 
 
@@ -26,5 +26,3 @@ bc = [ga, hr]
   bc[rand(0 .. 1)].bootcamp_reviews << review
 
 end
-
-
