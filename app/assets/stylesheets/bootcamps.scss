@@ -1,8 +1,126 @@
 
+/*----------------------------------------------*/
+              /*Bootcamp Nav CSS*/
+/*----------------------------------------------*/
+
+.home_nav_button > li > button {
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  border: none;
+  font-size: 30px;
+  outline: none;
+}
+
+.home_brand .bootcamp_brand {
+    margin-left: -35px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+}
+
+.home_nav_button > li > button:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: rgb(128,128,128);
+}
+
+@media screen and (max-width: 375px) {
+    #myNavbar {
+     background-color: black;
+    }
+}
+
+
 
 /*----------------------------------------------*/
-              /*Melissa's CSS*/
+              /* Header */
 /*----------------------------------------------*/
+
+
+
+header {
+    color: #fff;
+    background: #18bc9c;
+    padding-left: 0px !important;
+}
+
+header .container {
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+#bootcamp-logo {
+  width: 224px;
+  height: 170px;
+  max-width: 224px;
+  max-height: 170px;
+  background-color: white;
+  border-radius: 5%;
+  padding: 5px;
+  border: solid grey 5px;
+}
+
+.img-responsive {
+  max-width: 150px;
+  max-height: 150px;
+  position: relative;
+  padding-left: 20%;
+
+}
+
+.name {
+  font-size: 35px !important;
+  padding-bottom: 30px !important;
+
+}
+
+.fa {
+  color: yellow;
+  padding-right: 10px;
+}
+
+.top {
+  margin-top: 20px !important;
+}
+
+.rating {
+  margin-top: -20px;
+}
+
+#overallRating {
+  background-color: white;
+  color: #18bc9c;
+  text-align: center;
+  width: 224px;
+  height: 170px;
+  max-width: 224px;
+  max-height: 170px;
+  border-radius: 5%;
+  border: solid grey 5px;
+}
+
+.rating-number {
+  font-size: 70px;
+  color: gray;
+
+}
+
+.rating-desc {
+  font-size: 20px;
+  color: gray;
+
+}
+
+
+
+/*----------------------------------------------*/
+              /* Reviews */
+/*----------------------------------------------*/
+
 
 .user-photo img {
   border-radius: 50%;
@@ -14,46 +132,6 @@
   text-align: center;
 }
 
-header {
-    text-align: center;
-    color: #fff;
-    background: #18bc9c;
-}
-
-header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-header img {
-    display: block;
-    margin: 0 auto 20px;
-}
-
-header .intro-text .name {
-    display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
-    font-weight: 700;
-}
-
-header .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 300;
-}
-
-.img-responsive {
-  max-width: 200px;
-  max-height: 200px;
-  border: solid white 10px;
-
-}
-.bootcamp-header {
-  background-color: red;
-  position: relative;
-  display: inline-block;
-}
 
 #review {
   margin-bottom: 30px;
@@ -68,28 +146,14 @@ header .intro-text .skills {
   display: inline;
 }
 
-.header-image {
-  position: absolute;
-  width: 100%;
-}
-
-.bootcamp-photo {
-  position: absolute;
-  width: 100%;
-  float: left;
-
-}
-
-.bootcamp-info {
-  float: left;
-  padding-right: 50px;
-}
 
 .rating-boxes {
   padding: 20px 10px 20px 10px;
   border: solid white 1px;
   color: #fff;
   background-color: #18bc9c;
+/*  max-width: 130px;
+  max-height: 80px;*/
 }
 
 .review {
@@ -103,6 +167,7 @@ header .intro-text .skills {
 .more hover {
   background-color: yellow;
 }
+
 
 
 
@@ -356,40 +421,6 @@ footer .bar-wrap {
     }
 }
 
-/*----------------------------------------------*/
-              /*Bootcamp Nav CSS*/
-/*----------------------------------------------*/
-
-.home_nav_button > li > button {
-  background-color: transparent;
-  text-decoration: none;
-  color: white;
-  border: none;
-  font-size: 30px;
-  outline: none;
-}
-
-.home_brand .bootcamp_brand {
-    margin-left: -35px;
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
-    background-color: transparent;
-    border: transparent;
-    outline: none;
-}
-
-.home_nav_button > li > button:hover {
-  text-decoration: none;
-  background-color: transparent;
-  color: rgb(128,128,128);
-}
-
-@media screen and (max-width: 375px) {
-    #myNavbar {
-     background-color: black;
-    }
-}
 
 
 

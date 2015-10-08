@@ -1,0 +1,71 @@
+
+<header>
+    <div class="container wrapper">
+      <div class="inner_content">
+        <div class="row">
+
+          <!--Bootcamp Logo-->
+          <div class="col-lg-3">
+            <div class="fadeindown animated fadeInDown imageCrop" id="bootcamp-logo">
+              <img id="imgUserProfile" class="th img-responsive" src="http://static1.squarespace.com/static/522d5bfee4b090a2d482afb3/t/53eac34be4b0a70179a4fee6/1407894347951/General+Assembly+Logo">
+            </div>
+          </div>
+          <!--Bootcamp Info-->
+          <div class="col-lg-4">
+            <span class="name"><%= @bootcamp.name %></span>
+            <br>
+              <ul class="column top" style="list-style:none;">
+                <li><i class="fa fa-map-marker"></i><%= @bootcamp.address %></li>
+                <li><i class="fa fa-link"></i><%= @bootcamp.url %></li>
+                <li><i class="fa fa-phone"></i><%= @bootcamp.phone %></li>
+                <li><i class="fa fa-envelope"></i><%= @bootcamp.email %></li>
+              </ul>
+            <br>
+                <a type="button" class="btn btn-lg btn-danger" href="/bootcamps/<%= @bootcamp.id %>/review" data-no-turbolink="true">Submit a Review!</a>
+                <a type="button" class="btn btn-lg btn-warning" href="/bootcamp_reviews/<%= @bootcamp.id %>" data-no-turbolink="true">Read All Reviews</a>
+          </div>
+          <div class="col-lg-5">
+
+            <!--Review bars-->                  
+            <h2>Rating Breakdown</h2>
+              <div class="progress">
+                <div id="staffRating" class="bar ratingAverage" data-percentage="65" style="width: 65%;">65%</div>
+              </div>
+              <small>STAFF</small>
+
+             <div class="progress">
+                 <div id="propertyRating" class="bar ratingAverage" data-percentage="65" style="width: 65%;">65%</div>
+             </div>
+             <small>PROPERTY</small>
+
+            <div class="progress">
+                <div id="valueForMoneyRating" class="bar ratingAverage" data-percentage="65" style="width: 65%;">65%</div>
+            </div>
+            <small>VALUE FOR MONEY</small>
+         </div>
+        </div>
+
+        <!--Overall Score -->
+        <div class="row">
+          <div class="col-lg-3 rating">
+              <div id="overallRating" class="th">
+                <div id="lblRating">
+                  <span class="rating-number">91</span>
+                  <br>
+                  <span class="rating-desc">Overall Rating</span>
+                </div>
+                <br>
+                  <div id="lblRatingLabel">
+                  </div>
+              </div>
+          </div>
+
+          <!--Courses Offered-->
+          <div class="col-lg-9">
+            <h2>Courses Offered</h2>
+              <% @bootcamp.courses.split("|").each do | course |  %>
+              <%= course %>
+              <% end %>
+          </div>
+        </div>               
+</header>
