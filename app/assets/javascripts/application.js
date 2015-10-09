@@ -48,9 +48,11 @@ $(document).ready(function() {
 		scrollToAnchor('slide4');
 	});
 
+	reviewsChecker();
 	submitReview();
 	editReview();
 	bootcampBars();
+	
 
 
 });
@@ -176,6 +178,10 @@ function bootcampBars() {
     width: campusAvg + "%"
   	}, 1000, "easeOutCubic");
 
+}
 
-
+function reviewsChecker() {
+	if(!!document.getElementById("reviews-area")) {
+		$('#navbar-ul').prepend('<li><button class="btn btn-default" id="slide1_button">Reviews</button></li>')
+	}
 }
