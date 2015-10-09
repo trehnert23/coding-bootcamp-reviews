@@ -13,14 +13,14 @@ bc = [ga, hr]
 
 
 
-50.times do
+500.times do
   user = User.create(
     username: FFaker::Internet::user_name,
     email: FFaker::Internet::email,
     password: "password"
   )
 
-  review = BootcampReview.create(content: FFaker::HipsterIpsum::paragraph, campus: rand(5 .. 10), worthit: worth[rand(0 .. 1)], location: rand(5 .. 10), jobhelp: rand(5 .. 10), hired: answer[rand(0 .. 3)])
+  review = BootcampReview.create(content: FFaker::HipsterIpsum::paragraph, campus: rand(7 .. 10), worthit: worth[rand(0 .. 1)], location: rand(4 .. 7), jobhelp: rand(5 .. 10), hired: answer[rand(0 .. 3)])
 
   user.bootcamp_reviews << review
   bc[rand(0 .. 1)].bootcamp_reviews << review

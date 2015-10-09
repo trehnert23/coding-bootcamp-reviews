@@ -135,24 +135,24 @@ function editReview() {
 }
 
 function bootcampBars() {
-	var campusAvg = (parseFloat($('#campusAvg').html()) * 10).toFixed(2);
-	console.log(parseFloat($('#campusAvg').html()));
-	var yesAvg = (parseFloat($('#yesAvg').html()) * 100).toFixed(2);
-	console.log(parseFloat($('#yesAvg').html()));
-	var jobhelpAvg = (parseFloat($('#jobhelpAvg').html()) * 10).toFixed(2);
-	console.log(parseFloat($('#jobhelpAvg').html()));
-	var locationAvg = (parseFloat($('#locationAvg').html()) * 10).toFixed(2);
-	console.log(parseFloat($('#locationAvg').html()));
+
+	var campusAvg = ($('#campusAvg').html());
+	
+	var yesAvg = ($('#yesAvg').html());
+
+	var jobhelpAvg = ($('#jobhelpAvg').html());
+	
+	var locationAvg = ($('#locationAvg').html());
+	
 	$('#worthitRating').css({backgroundColor: "blue"});
 	$('#locationRating').css({backgroundColor: "blue"});
 	$('#jobhelpRating').css({backgroundColor: "blue"});
 	$('#campusRating').css({backgroundColor: "blue"});
 	
-
-	console.log(campusAvg);
-	console.log(yesAvg);
-	console.log(jobhelpAvg);
-	console.log(locationAvg);
+	console.log('campus' + $('#campusAvg').html());
+	console.log('yes' + $('#yesAvg').html());
+	console.log($('#locationAvg').html());
+	console.log($('#jobhelpAvg').html());
 
 
 	$("#worthitRating").animate({
@@ -170,5 +170,7 @@ function bootcampBars() {
   	$("#campusRating").animate({
     width: campusAvg + "%"
   	}, 1000, "easeOutCubic");
+
+
 
 }
