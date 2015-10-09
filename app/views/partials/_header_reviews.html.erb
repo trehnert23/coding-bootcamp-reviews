@@ -34,7 +34,7 @@
             <h3>Info</h3>
               <ul class="column top" style="list-style:none;">
                 <li> <i class="fa fa-map-marker"></i> <%= @bootcamp.address %></li>
-                <li><i class="fa fa-link"></i><%= @bootcamp.url %></li>
+                <li><i class="fa fa-link"></i><a href="<%= @bootcamp.url %>" style="color:white"><%= @bootcamp.url %></a></li>
                 <li><i class="fa fa-phone"></i><%= @bootcamp.phone %></li>
                 <li><i class="fa fa-envelope"></i><%= @bootcamp.email %></li>
               </ul>
