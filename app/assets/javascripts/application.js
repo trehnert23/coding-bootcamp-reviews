@@ -144,10 +144,15 @@ function bootcampBars() {
 	
 	var locationAvg = ($('#locationAvg').html());
 	
-	$('#worthitRating').css({backgroundColor: "blue"});
-	$('#locationRating').css({backgroundColor: "blue"});
-	$('#jobhelpRating').css({backgroundColor: "blue"});
-	$('#campusRating').css({backgroundColor: "blue"});
+	$('#worthitRating').css({backgroundColor: "rgb(225, 66, 66)", textAlign: "center", color: "white"});
+	$('#locationRating').css({backgroundColor: "rgb(225, 66, 66)", textAlign: "center", color: "white"});
+	$('#jobhelpRating').css({backgroundColor: "rgb(225, 66, 66)", textAlign: "center", color: "white"});
+	$('#campusRating').css({backgroundColor: "rgb(225, 66, 66)", textAlign: "center", color: "white"});
+	$('#worthitRating').html(yesAvg + "%");
+	$('#locationRating').html(locationAvg + "%");
+	$('#jobhelpRating').html(jobhelpAvg + "%");
+	$('#campusRating').html(campusAvg + "%");
+
 	
 	console.log('campus' + $('#campusAvg').html());
 	console.log('yes' + $('#yesAvg').html());

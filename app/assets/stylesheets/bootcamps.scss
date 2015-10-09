@@ -111,6 +111,13 @@ header .container {
   
 }
 
+#bcName {
+    font-size: 50px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+}
+
 .white-box ~ .white-box {
     margin-top: 30px;
 }
@@ -118,6 +125,8 @@ header .container {
 .bars {
   margin-top: 4%;
 }
+
+
 
 .courses-offered {
   min-height: 150px;
