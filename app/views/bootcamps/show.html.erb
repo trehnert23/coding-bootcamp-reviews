@@ -58,21 +58,21 @@
             
               <h3>Courses Offered</h3>
               <ul>
-                <p><% @bootcamp.courses.split("|").each do | course |  %>
-                <li><%= course %></li>
-                <% end %></p>
+                <h5><% @bootcamp.courses.split("|").each do | course |  %>
+                <li><%= course %></li><br>
+                <% end %></h5>
               </ul>
             
             <br>
 			<ul>
 				<h4>More Information</h4>
-					<li>Hours of Operations: <br> M-F 8:30AM - 9:00PM</li>
+					<h5><li>Hours of Operations: <br> M-F 8:30AM - 9:00PM</li>
 					<br>
-					<li>Scholarships <br> Yes</li>
+					<li>Scholarships<br>Yes</li>
 					<br>
 					<li>Co-ed <br> Yes </li>
 					<br>
-					<li>Meal Plan <br> Hahaha, no.</li>
+					<li>Meal Plan <br> Hahaha, no.</li></h5>
 			</ul>
 		</div>
 		<!-- /#sidebar-wrapper -->
