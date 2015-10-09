@@ -45,6 +45,7 @@ header {
     color: #fff;
     background: #18bc9c;
     padding-left: 0px !important;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 header .container {
@@ -93,20 +94,9 @@ header .container {
 
 .white-box {
   text-align: center;
-
   background-color: white;
   color: #18bc9c;
-  border-radius: 5%;
   border: solid grey 5px;
-  
-  /*min-width: 224px;*/
-  /*min-height: 170px;*/
-  /*max-width: 224px;*/
-  /*max-height: 170px;*/
-
-  /*margin-top: 20%;*/
-  /*margin-left: 0px;*/
-  /*position: absolute;*/
   
 }
 
@@ -124,6 +114,11 @@ header .container {
 
 }
 
+.courses-offered p {
+  font-size: 15px;
+
+}
+
 .rating-number {
   font-size: 70px;
   color: gray;
@@ -138,6 +133,7 @@ header .container {
 
 .btn {
   margin-top: 20px;
+  border-radius: 0px !important;
 }
 
 .back-button {
@@ -167,12 +163,14 @@ header .container {
 
 .user-review-info {
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 
 #review {
   margin-bottom: 30px;
   margin-top: 30px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .column {
   text-align: left;
@@ -189,7 +187,7 @@ header .container {
 }
 
 .awesome-data {
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
   color: yellow;
   
@@ -206,13 +204,15 @@ header .container {
 
 .review {
   margin-top: 10px;
+  padding-bottom: 15px;
 }
 
 .more {
   text-align: right;
+  border-radius: 0px !important;
 }
 
-.more hover {
+.more button:hover {
   background-color: yellow;
 }
 

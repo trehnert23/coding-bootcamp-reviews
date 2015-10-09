@@ -38,9 +38,9 @@
             <!--Courses Offered-->
             <div class="row courses-offered">
               <h2>Courses Offered</h2>
-                <% @bootcamp.courses.split("|").each do | course |  %>
-                <%= course %>
-                <% end %>
+                <p><% @bootcamp.courses.split("|").each do | course |  %>
+                <%= course %> |
+                <% end %></p>
             </div>
 
 
@@ -97,16 +97,6 @@
 
 
 
-          <!--Courses Offered-->
-          <div class="col-lg-9">
-            <h2>Courses Offered</h2>
-              <% @bootcamp.courses.split("|").each do | course |  %>
-              <%= course %>
-              <% end %>
-          </div>
-        </div>
-
-
     <!--     <h3>Totals</h3>
       Location: <%= @bootcamp.locationTotal %> <br>
       Job Help: <%= @bootcamp.jobhelpTotal%> <br>
@@ -140,5 +130,5 @@
       Job Help: <%= @bootcamp.jobhelpAvg %><br>
       Campus: <%= @bootcamp.campusAvg %><br><br>
 
-      Overall Average: <%= @bootcamp.overallAvg %>   -->     -->         
+      Overall Average: <%= @bootcamp.overallAvg %>   -->         
 </header>
