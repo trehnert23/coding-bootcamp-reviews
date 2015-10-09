@@ -49,7 +49,6 @@
             <!--Header Buttons-->
             <a type="button" class="btn btn-lg btn-danger" href="/bootcamps/<%= @bootcamp.id %>/review" data-no-turbolink="true">Submit a Review!</a>
             <a type="button" class="btn btn-lg btn-warning" href="/bootcamp_reviews/<%= @bootcamp.id %>" data-no-turbolink="true">Read All Reviews</a>
-
           </div>
 
 
@@ -57,36 +56,34 @@
           <div class="col-md-5 bars">
             <small>WORTH THE PRICE?</small>
               <div class="progress">
-                <div id="worthRating" class="bar ratingAverage" data-percentage="65" style="width: 65%;">65%</div>
+                <div id="worthitRating" class="bar ratingAverage" data-percentage="0" style="width: 0%;">0%</div>
               </div>
 
            <!--    <small>STUDENTS EMPLOYED AFTER GRADUATION</small>
               <div class="progress">
-                 <div id="propertyRating" class="bar ratingAverage" data-percentage="65" style="width: 65%;">65%</div>
+                 <div id="propertyRating" class="bar ratingAverage" data-percentage="0" style="width: 0%;">0%</div>
               </div> -->
              
              <small>LOCATION SCORE</small>
               <div class="progress">
-                <div id="locationRating" class="bar ratingAverage" data-percentage="65" style="width: 65%;">65%</div>
+                <div id="locationRating" class="bar ratingAverage" data-percentage="0" style="width: 0%;">0%</div>
               </div>
             
             <small>JOB SEARCH HELP</small>
             <div class="progress">
-                 <div id="jobhelpRating" class="bar ratingAverage" data-percentage="65" style="width: 65%;">65%</div>
+                 <div id="jobhelpRating" class="bar ratingAverage" data-percentage="0" style="width: 0%;">0%</div>
              </div>
              
              <small>BAD ASS CAMPUS & FACILITIES</small>
              <div class="progress">
-                 <div id="campusRating" class="bar ratingAverage" data-percentage="65" style="width: 65%;">65%</div>
+                 <div id="campusRating" class="bar ratingAverage" data-percentage="0" style="width: 0%;">0%</div>
              </div>
-         
+
              <a type="button" class="btn btn-lg btn-danger back-button" href="/bootcamps/<%= @bootcamp.id %>/" data-no-turbolink="true">Back to <%= @bootcamp.name %> Page!</a>
              
          </div>
 
       </div> <!-- END ROW  -->
-                
-                <!--Back Button-->
 
     <hr class="star-light">
 
@@ -95,7 +92,7 @@
 
 
 
-
+             
 <!-- 
 
         <h3>Totals</h3>
