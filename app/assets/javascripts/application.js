@@ -50,6 +50,7 @@ $(document).ready(function() {
 
 	submitReview();
 	editReview();
+	bootcampBars();
 
 
 });
@@ -131,4 +132,43 @@ function editReview() {
 			// console.log(data);
 		});
 	})
+}
+
+function bootcampBars() {
+	var campusAvg = (parseFloat($('#campusAvg').html()) * 10).toFixed(2);
+	console.log(parseFloat($('#campusAvg').html()));
+	var yesAvg = (parseFloat($('#yesAvg').html()) * 100).toFixed(2);
+	console.log(parseFloat($('#yesAvg').html()));
+	var jobhelpAvg = (parseFloat($('#jobhelpAvg').html()) * 10).toFixed(2);
+	console.log(parseFloat($('#jobhelpAvg').html()));
+	var locationAvg = (parseFloat($('#locationAvg').html()) * 10).toFixed(2);
+	console.log(parseFloat($('#locationAvg').html()));
+	$('#worthitRating').css({backgroundColor: "blue"});
+	$('#locationRating').css({backgroundColor: "blue"});
+	$('#jobhelpRating').css({backgroundColor: "blue"});
+	$('#campusRating').css({backgroundColor: "blue"});
+	
+
+	console.log(campusAvg);
+	console.log(yesAvg);
+	console.log(jobhelpAvg);
+	console.log(locationAvg);
+
+
+	$("#worthitRating").animate({
+    width:  yesAvg + "%"
+  	}, 1000, "easeOutCubic");
+
+  	$("#locationRating").animate({
+    width: locationAvg + "%"
+  	}, 1000, "easeOutCubic");
+
+  	$("#jobhelpRating").animate({
+    width: jobhelpAvg + "%"
+  	}, 1000, "easeOutCubic");
+
+  	$("#campusRating").animate({
+    width: campusAvg + "%"
+  	}, 1000, "easeOutCubic");
+
 }
