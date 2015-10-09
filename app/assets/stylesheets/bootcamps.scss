@@ -27,6 +27,8 @@
   color: rgb(128,128,128);
 }
 
+    
+
 @media screen and (max-width: 375px) {
     #myNavbar {
      background-color: black;
@@ -158,7 +160,11 @@ header .container {
 }
 
 
-
+#info-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
 
 
 /*----------------------------------------------*/
