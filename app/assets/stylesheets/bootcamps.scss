@@ -184,14 +184,25 @@ header .container {
   display: inline;
 }
 
+.title-ratings p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.awesome-data {
+  font-size: 25px;
+  text-align: center;
+  color: yellow;
+  
+}
+
 
 .rating-boxes {
   padding: 20px 10px 20px 10px;
   border: solid white 1px;
   color: #fff;
   background-color: #18bc9c;
-/*  max-width: 130px;
-  max-height: 80px;*/
+
 }
 
 .review {
@@ -204,10 +215,6 @@ header .container {
 
 .more hover {
   background-color: yellow;
-}
-
-.title-ratings p {
-  font-size: 12px;
 }
 
 
