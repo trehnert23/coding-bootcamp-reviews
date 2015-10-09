@@ -92,8 +92,8 @@ function jobStatus() {
 		hired = 'Not Employed';
 	} else if (document.getElementById('still-attending').checked){
 		hired = 'Still Attending';
-	} else if (document.getElementById('not-seeking-employment').checked){
-		hired = 'Not Seeking Employment';
+	} else if (document.getElementById('not-looking').checked){
+		hired = 'Not Looking';
 	}
 
 	return hired;
