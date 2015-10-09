@@ -27,6 +27,7 @@ $(document).ready(function() {
 	//   }
 	// });
 
+	reviewsChecker();
 
 	$("#home_link").click(function() {
 		scrollToAnchor('home_link');
@@ -48,7 +49,7 @@ $(document).ready(function() {
 		scrollToAnchor('slide4');
 	});
 
-	reviewsChecker();
+	
 	submitReview();
 	editReview();
 	bootcampBars();
