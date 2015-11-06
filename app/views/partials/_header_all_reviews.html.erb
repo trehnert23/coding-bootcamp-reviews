@@ -77,7 +77,11 @@
              <!--Header Buttons-->
              <div id="submit-button-wrapper" class="text-center">
               <ul class="rev-button">
-                <li><a type="button"  class="btn btn-lg btn-default" href="/bootcamps/<%= @bootcamp.id %>/review" data-no-turbolink="true">Submit a Review</a></li>
+                <% if current_user %>
+                  <li><a type="button"  class="btn btn-lg btn-default" href="/bootcamps/<%= @bootcamp.id %>/review" data-no-turbolink="true">Submit a Review</a></li>
+                <% else %>
+                  <li> <h3> Sign in to submit a review </h3></li>
+                <% end %>
               </ul>
              </div>
            
