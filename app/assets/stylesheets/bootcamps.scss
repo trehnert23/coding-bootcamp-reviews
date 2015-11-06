@@ -21,6 +21,19 @@
     outline: none;
 }
 
+@media screen and (max-width: 968px) {
+
+  .home_brand .bootcamp_brand {
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+}
+
+}
+
 .home_nav_button > li > button:hover {
   text-decoration: none;
   background-color: transparent;
@@ -167,6 +180,9 @@ header .container {
 }
 
 
+
+
+
 /*----------------------------------------------*/
               /* Reviews */
 /*----------------------------------------------*/
@@ -231,17 +247,6 @@ header .container {
 
 .more button:hover {
   background-color: yellow;
-}
-
-
-
-
-/*----------------------------------------------*/
-              /*User Profile*/
-/*----------------------------------------------*/
-
-.user-profile {
-  margin-top: 5%;
 }
 
 
