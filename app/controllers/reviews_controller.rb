@@ -2,6 +2,7 @@ class ReviewsController < ApplicationController
 
   def index
   	@bootcamp_reviews = BootcampReview.all
+    @user = User.new
   	render json: @bootcamp_reviews
   end
 
