@@ -1,63 +1,64 @@
 <%= render 'partials/nav_show' %>
 
 
-<div class="container user-profile">
+<div class="container">
+	<div class=" user-profile">
+		<div class="user-profile-content">
+			<h1>Welcome, <% if current_user %>
+			<%= current_user.username %>                   
+			<% end %>!</h1>
 
-	<h1>Welcome, <% if current_user %>
-<%= current_user.username %>                   
-<% end %>!</h1>
+			<% if @user.bootcamp_reviews.length >0 %>
+					<% @user.bootcamp_reviews.each do |review| %>
 
-<% if @user.bootcamp_reviews.length >0 %>
-		<% @user.bootcamp_reviews.each do |review| %>
+						<div class="col-lg-12 col-sm-12" id="review">
+							<div class="col-lg-3 col-md-3 col-xs-12 user-review-info">
+								<ul style="list-style:none;">
+									<li class="user-photo"><img src="http://2016rotarypresidentialconferencemanila.org/wp-content/uploads/2015/05/user-icon-silhouette.png"></li>
+									<li> <%= User.find_by_id(review.user_id).username %></li>
+									<li><%= review.created_at %></li>
+								</ul>
+							</div>
+							<div class="col-lg-9 col-md-9 col-xs-12">
+								<div class="col-lg-12 title-ratings">
+									<div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Overview <br> Amazing!</p></div>
 
-			<div class="col-lg-12 col-sm-12" id="review">
-				<div class="col-lg-3 col-md-3 col-xs-12 user-review-info">
-					<ul style="list-style:none;">
-						<li class="user-photo"><img src="http://2016rotarypresidentialconferencemanila.org/wp-content/uploads/2015/05/user-icon-silhouette.png"></li>
-						<li> <%= User.find_by_id(review.user_id).username %></li>
-						<li><%= review.created_at %></li>
-					</ul>
-				</div>
-				<div class="col-lg-9 col-md-9 col-xs-12">
-					<div class="col-lg-12 title-ratings">
-						<div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Overview <br> Amazing!</p></div>
+									<div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Job search: <br><%= review.jobhelp %></p></div>
 
-						<div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Job search: <br><%= review.jobhelp %></p></div>
+									<div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Instructors: <br> Amazing!</p></div>
 
-						<div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Instructors: <br> Amazing!</p></div>
+									<div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Location: <br> <%= review.location %></p></div>
 
-						<div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Location: <br> <%= review.location %></p></div>
+									<div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Worth it? <br> <%= review.worthit %></p></div>
 
-						<div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Worth it? <br> <%= review.worthit %></p></div>
+									<div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Hired? <br>  <%= review.hired %></p></div>
+								</div>
 
-						<div class="col-lg-4 col-sm-4 col-xs-6 rating-boxes"><p>Hired? <br>  <%= review.hired %></p></div>
-					</div>
+								<div class="col-lg-12 review">
+									<p><%= review.content %></p>
+								</div>
 
-					<div class="col-lg-12 review">
-						<p><%= review.content %></p>
-					</div>
+								<% if !!current_user %>
+								<% if current_user.id == review.user_id %>
+								<h5 class="more"><a href="/bootcamp_reviews/<%= review.id %>/edit" data-no-turbolink="true" class="button">Edit review... </a></h5>
+								<% end %>
+								<% end %>
 
-					<% if !!current_user %>
-					<% if current_user.id == review.user_id %>
-					<h5 class="more"><a href="/bootcamp_reviews/<%= review.id %>/edit" data-no-turbolink="true" class="button">Edit review... </a></h5>
+								<br>
+							</div>
+						</div>
+
+				
 					<% end %>
-					<% end %>
+			<% else %>
 
-					<br>
+				<div>
+					<p>You have not written any reviews. Please write some soon!</p>
 				</div>
-			</div>
-
-	
-		<% end %>
-<% else %>
-
-	<div>
-		<p>You have not written any reviews. Please write some soon!</p>
-	</div>
-	
-<% end %>
-
-
+				
+			<% end %>
+		</div>
+		</div>
 </div>
 
 <%= render "partials/footer_show" %>
