@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     @user = User.new userParams
     if @user.save
       login(@user)
-      redirect_to "/"
+      redirect_to :back
     else
       redirect_to "/"
     end
