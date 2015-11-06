@@ -10,8 +10,11 @@ class BootcampReviewsController < ApplicationController
   end
 
   def show
-    
-
+    # binding.pry
+    @user = User.new
+    id = params[:id]
+    @bootcamp_review = BootcampReview.find_by_id(id)
+    @bootcamp = @bootcamp_review.bootcamp
   end
 
   def edit
