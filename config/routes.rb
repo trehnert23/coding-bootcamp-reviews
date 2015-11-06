@@ -28,4 +28,6 @@ Rails.application.routes.draw do
 
 	get '/bootcamp_reviews/:id', to: "bootcamp_reviews#index"
 
+	get '/bootcamp_review/:id', to: "bootcamp_reviews#show"
+
 end

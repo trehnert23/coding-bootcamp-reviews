@@ -13,6 +13,7 @@ class BootcampsController < ApplicationController
 
 
   def show
+    @user = User.new
     get_bootcamp
     get_reviews
   end

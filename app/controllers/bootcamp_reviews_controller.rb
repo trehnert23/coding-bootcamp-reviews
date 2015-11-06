@@ -5,6 +5,7 @@ class BootcampReviewsController < ApplicationController
     bootcampId = params[:id]
     @bootcamp = Bootcamp.find_by_id(bootcampId)
     @reviews = @bootcamp.bootcamp_reviews
+    @user = User.new
 
   end
 
