@@ -7,18 +7,18 @@
         <span class="icon-bar"></span>
       </button>
       <ul class="home_brand">
-        <a class="navbar-brand bootcamp_brand" href="/">Home</a>
+        <a class="navbar-brand bootcamp_brand" href="/">Coding Bootcamp Reviews</a>
       </ul>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul id="navbar-ul" class="nav navbar-nav home_nav_button navbar-right">
-
           
-          <% if !!current_user.id %>
+          <% if current_user && !!current_user.id %>
             <li><a href="/users/<%= current_user.id %>" type="button">Profile</a></li>
             <li><a href="/users/<%= current_user.id %>" type="button">Logout</a></li>
           <% else %>
-            <li><button class="btn btn-default" id="slide1_button">Reviews</button></li>
+            <li><a data-toggle="modal" href="#signup-modal">Sign Up</a></li>
+            <li><a data-toggle="modal" href="#login-modal">Login</a></li>
           <% end %>
       </ul>
     </div>
