@@ -8,9 +8,9 @@ class SessionsController < ApplicationController
     @user = User.confirm(user_params)
     if @user
       login(@user)
-      redirect_to root_path
+      redirect_to :back
     else
-      redirect_to root_path
+      redirect_to :back
     end
   end
 
