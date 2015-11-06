@@ -1,6 +1,7 @@
 <!--Partials Nav bar-->
 <%= render 'partials/nav_show' %>
-
+<%= render 'partials/login_modal' %>
+<%= render 'partials/signup_modal' %>
 <%= render 'partials/header_reviews' %>
 
 
@@ -42,7 +43,7 @@
 						 <p><%= truncate(review.content, length: 200, separator: " ") %></p>
 					</div>
 					
-					<h5 class="more"><a href="#" class="button">Read More...</a></h5>
+					<h5 class="more"><a href="/bootcamp_review/<%= review.id %>" class="button" data-no-turbolink="true">Read More...</a>
 				</div>
 			</div>
 			<!--End of Review-->
