@@ -5,6 +5,7 @@
 
 .home_nav_button > li > button {
   background-color: transparent;
+  font-family: Dosis;
   text-decoration: none;
   color: white;
   border: none;
@@ -12,8 +13,14 @@
   outline: none;
 }
 
+.home_nav_button > li {
+  font-family: Dosis;
+  font-size: 30px;
+}
+
 .home_brand .bootcamp_brand {
     font-size: 30px;
+    font-family: Dosis;
     text-decoration: none;
     color: white;
     background-color: transparent;
@@ -178,8 +185,6 @@ header .container {
     margin-right: auto;
     width: 60%;
 }
-
-
 
 
 

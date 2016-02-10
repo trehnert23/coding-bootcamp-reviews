@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20151007172552) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "bootcamp_reviews", force: :cascade do |t|
     t.text     "content"
     t.integer  "campus"
