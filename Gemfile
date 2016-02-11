@@ -1,8 +1,9 @@
 source 'http://rubygems.org'
-
+ruby '2.1.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -31,6 +32,7 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
+gem 'rails_12factor'
 # gem 'sqlite3-ruby'
 
 # Use Capistrano for deployment
