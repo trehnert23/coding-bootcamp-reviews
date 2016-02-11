@@ -31,7 +31,7 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
-gem 'sqlite3-ruby'
+# gem 'sqlite3-ruby'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
