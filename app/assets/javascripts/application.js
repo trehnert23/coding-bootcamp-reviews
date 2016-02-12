@@ -60,36 +60,49 @@ $(document).ready(function() {
 
 
 $(function(){
-  var currencies = [
-    { value: "Academy X", data: "3" },
-    { value: "Anyone Can Learn to Code", data: "4" },
-    { value: "App Accademy", data: "5" },
-    { value: "Apprentice.io", data: "6" },
-    { value: "Big Nerd Ranch", data: "7" },
-    { value: "CodePath", data: "8" },
-    { value: "Coder Camps", data: "9" },
-    { value: "CodeStream Labs", data: "10" },
-    { value: "Codify Academy", data: "11" },
-    { value: "Coding Dojo", data: "12" },
-    { value: "Dev Bootcamp", data: "13" },
-    { value: "Fire Bootcamp", data: "14" },
-    { value: "Galvanize", data: "15" },
-    { value: "General Assembly", data: "1" },
-    { value: "Hack Reactor", data: "2" },
-    { value: "Hackbright Academy", data: "16" },
-    { value: "Hacker Coding Academy", data: "17" },
-    { value: "Hackership San Francisco", data: "18" },
-    { value: "LearnTech Labs", data: "19" },
-    { value: "Make School", data: "20" },
-    { value: "MakerSquare", data: "21" },
-    { value: "Metis", data: "22" },
-    { value: "Mobile Makers Academy", data: "23" },
-    { value: "Product School", data: "24" },
-    { value: "Thinkful", data: "25" },
-    { value: "Tradecraft", data: "26" },
-    { value: "Zipfian Academy", data: "27" },
-  ];
+	var availableTags = [
+		{ value: "Academy X", data: "3" },
+		{ value: "Anyone Can Learn to Code", data: "4" },
+		{ value: "App Accademy", data: "5" },
+		{ value: "Apprentice.io", data: "6" },
+		{ value: "Big Nerd Ranch", data: "7" },
+		{ value: "CodePath", data: "8" },
+		{ value: "Coder Camps", data: "9" },
+		{ value: "CodeStream Labs", data: "10" },
+		{ value: "Codify Academy", data: "11" },
+		{ value: "Coding Dojo", data: "12" },
+		{ value: "Dev Bootcamp", data: "13" },
+		{ value: "Fire Bootcamp", data: "14" },
+		{ value: "Galvanize", data: "15" },
+		{ value: "General Assembly", data: "1" },
+		{ value: "Hack Reactor", data: "2" },
+		{ value: "Hackbright Academy", data: "16" },
+		{ value: "Hacker Coding Academy", data: "17" },
+		{ value: "Hackership San Francisco", data: "18" },
+		{ value: "LearnTech Labs", data: "19" },
+		{ value: "Make School", data: "20" },
+		{ value: "MakerSquare", data: "21" },
+		{ value: "Metis", data: "22" },
+		{ value: "Mobile Makers Academy", data: "23" },
+		{ value: "Product School", data: "24" },
+		{ value: "Thinkful", data: "25" },
+		{ value: "Tradecraft", data: "26" },
+		{ value: "Zipfian Academy", data: "27" },
+	];
+  	$( "#tags" ).autocomplete({
+        source: availableTags
+    });
 });
+
+
+// <%= link_to "Academy X", bootcamps_path(3) %>
+// setup autocomplete function pulling from currencies[] array
+// $('#autocomplete').autocomplete({
+//   lookup: currencies,
+//   onSelect: function (suggestion) {
+//     location.href = "http://www.suggestion.com/test";
+//   }
+// });
 
 
 function goBack() {
