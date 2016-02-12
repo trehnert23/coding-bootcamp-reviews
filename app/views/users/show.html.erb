@@ -1,4 +1,4 @@
-<%= render 'partials/nav_show' %>
+<%= render 'partials/nav_profile' %>
 
 
 <div class="container">
@@ -39,9 +39,9 @@
 								</div>
 
 								<% if !!current_user %>
-								<% if current_user.id == review.user_id %>
-								<h5 class="more"><a href="/bootcamp_reviews/<%= review.id %>/edit" data-no-turbolink="true" class="button">Edit review... </a></h5>
-								<% end %>
+									<% if current_user.id == review.user_id %>
+										<h5 class="more"><a href="/bootcamp_reviews/<%= review.id %>/edit" data-no-turbolink="true" class="button">Edit review... </a></h5>
+									<% end %>
 								<% end %>
 
 								<br>
@@ -58,7 +58,7 @@
 				
 			<% end %>
 		</div>
-		</div>
+	</div>
 </div>
 
 <%= render "partials/footer_show" %>

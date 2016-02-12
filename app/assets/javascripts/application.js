@@ -58,6 +58,10 @@ $(document).ready(function() {
 
 });
 
+function goBack() {
+    window.history.back();
+}
+
 
 function scrollToAnchor(aid) {
 	var aTag = $("a[name='"+ aid + "']");

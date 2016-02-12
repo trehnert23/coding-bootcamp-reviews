@@ -3,14 +3,33 @@
               /*Bootcamp Nav CSS*/
 /*----------------------------------------------*/
 
+
 .home_nav_button > li > button {
   background-color: transparent;
   font-family: Dosis;
   text-decoration: none;
-  color: white;
+  color: grey;
   border: none;
   font-size: 30px;
   outline: none;
+  margin-top: 4px;
+  margin-right: 30px;
+}
+
+.home_nav_button .back_button {
+  background-color: transparent;
+  font-family: Dosis;
+  text-decoration: none;
+  color: grey;
+  border: none;
+  font-size: 30px;
+  outline: none;
+  margin-top: 4px;
+  margin-right: 30px;
+}
+
+.home_nav_button > li > button:hover {
+  color: white;
 }
 
 .home_nav_button > li {
@@ -123,8 +142,9 @@ header .container {
 }
 
 #bcName {
-    font-size: 50px;
+    font-size: 80px;
     margin-bottom: 10px;
+    margin-top: -10px;
     border-bottom: 1px solid white;
     padding-bottom: 30px;
 }
