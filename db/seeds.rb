@@ -76,7 +76,7 @@ bc = [ga,hr,ai,aa,bnr,ax,acltc,cp,cc,csl,ca,cd,db,fb,glv,ha,hca,hsf,ltl,ms,msq,m
   review = BootcampReview.create(content: FFaker::HipsterIpsum::paragraph, campus: rand(7 .. 10), worthit: worth[rand(0 .. 1)], location: rand(4 .. 7), jobhelp: rand(5 .. 10), hired: answer[rand(0 .. 3)])
 
   user.bootcamp_reviews << review
-  bc[rand(0 .. 6)].bootcamp_reviews << review
+  bc[rand(0 .. 26)].bootcamp_reviews << review
 
 end
 
@@ -90,7 +90,7 @@ end
   review = BootcampReview.create(content: FFaker::HipsterIpsum::paragraph, campus: rand(6 .. 9), worthit: worth[rand(0 .. 1)], location: rand(3 .. 6), jobhelp: rand(5 .. 9), hired: answer[rand(0 .. 3)])
 
   user.bootcamp_reviews << review
-  bc[rand(0 .. 6)].bootcamp_reviews << review
+  bc[rand(0 .. 26)].bootcamp_reviews << review
 
 end
 
@@ -104,7 +104,7 @@ end
   review = BootcampReview.create(content: FFaker::HipsterIpsum::paragraph, campus: rand(7 .. 10), worthit: worth[rand(0 .. 1)], location: rand(5 .. 8), jobhelp: rand(5 .. 9), hired: answer[rand(0 .. 3)])
 
   user.bootcamp_reviews << review
-  bc[rand(0 .. 6)].bootcamp_reviews << review
+  bc[rand(0 .. 26)].bootcamp_reviews << review
 
 end
 
@@ -118,7 +118,7 @@ end
   review = BootcampReview.create(content: FFaker::HipsterIpsum::paragraph, campus: rand(7 .. 10), worthit: worth[rand(0 .. 1)], location: rand(5 .. 8), jobhelp: rand(5 .. 9), hired: answer[rand(0 .. 3)])
 
   user.bootcamp_reviews << review
-  bc[rand(0 .. 6)].bootcamp_reviews << review
+  bc[rand(0 .. 26)].bootcamp_reviews << review
 
 end
 
