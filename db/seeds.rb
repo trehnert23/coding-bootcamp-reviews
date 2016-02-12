@@ -61,7 +61,7 @@ answer = ['Employed', 'Not Employed', 'Still Attending', 'Not Looking']
 
 worth = ['Yes', 'No']
 
-bc = [ga,hr,ai,aa,bnr,ax,acltc]
+bc = [ga,hr,ai,aa,bnr,ax,acltc,cp,cc,csl,ca,cd,db,fb,glv,ha,hca,hsf,ltl,ms,msq,mts,mma,ps,tkf,tdc,zfa]
 
 # ,cp,cc,csl,ca,cd,db,fb,glv,ha,hca,hsf,ivc,ku,ltl,ms,msq,mrc,mts,mma,ps,ru,scc,tkf,tdc,zfa
 
