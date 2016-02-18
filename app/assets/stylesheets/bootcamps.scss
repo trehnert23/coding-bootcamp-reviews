@@ -81,7 +81,6 @@
 /*----------------------------------------------*/
 
 
-
 header {
     color: #fff;
     background: #18bc9c;
@@ -222,8 +221,14 @@ header .container {
 .user-review-info {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  padding: 65px 0px 20px 0px;
 }
 
+.user-info-text {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 #review {
   margin-bottom: 30px;
