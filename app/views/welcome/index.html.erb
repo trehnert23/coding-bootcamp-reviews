@@ -1,5 +1,6 @@
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
 </head>
 <body class="home_body">
     <%= render 'partials/nav_home' %>
@@ -11,18 +12,13 @@
             <p class="css_text"> best bootcamp for you!<span class="typing_span">|</span></p>
         </div>
 
-    <!-- <div id="searchfield">
-        <form>
-            <input type="text" name="currency" class="biginput" id="tags" placeholder="Search for Your Bootcamp!">
-        </form>
-    </div> --><!-- @end #searchfield -->
-
-
+        <input type="text" placeholder="Search For Your Bootcamp" class="search" onkeydown="search(this)"/>
+        
     <div class="menu-wrap">
         <nav class="menu">
             <ul class="clearfix">
                 <li>
-                    <a class="dropdown_header" href="#">Review Your Bootcamp <span class="arrow">&#9660;</span></a>
+                    <a class="dropdown_header" href="#">Or Search the List<span class="arrow">&#9660;</span></a>
                       <ul class="sub-menu">
                         <li data-no-turbolink="true"><%= link_to "Academy X", bootcamps_path(5) %></li>
                         <li data-no-turbolink="true"><%= link_to "Anyone Can Learn to Code", bootcamps_path(6) %></li>

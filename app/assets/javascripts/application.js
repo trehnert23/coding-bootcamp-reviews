@@ -54,55 +54,101 @@ $(document).ready(function() {
 	editReview();
 	bootcampBars();
 	
-
-
 });
 
 
-$(function(){
-	var availableTags = [
-		{ value: "Academy X", data: "3" },
-		{ value: "Anyone Can Learn to Code", data: "4" },
-		{ value: "App Accademy", data: "5" },
-		{ value: "Apprentice.io", data: "6" },
-		{ value: "Big Nerd Ranch", data: "7" },
-		{ value: "CodePath", data: "8" },
-		{ value: "Coder Camps", data: "9" },
-		{ value: "CodeStream Labs", data: "10" },
-		{ value: "Codify Academy", data: "11" },
-		{ value: "Coding Dojo", data: "12" },
-		{ value: "Dev Bootcamp", data: "13" },
-		{ value: "Fire Bootcamp", data: "14" },
-		{ value: "Galvanize", data: "15" },
-		{ value: "General Assembly", data: "1" },
-		{ value: "Hack Reactor", data: "2" },
-		{ value: "Hackbright Academy", data: "16" },
-		{ value: "Hacker Coding Academy", data: "17" },
-		{ value: "Hackership San Francisco", data: "18" },
-		{ value: "LearnTech Labs", data: "19" },
-		{ value: "Make School", data: "20" },
-		{ value: "MakerSquare", data: "21" },
-		{ value: "Metis", data: "22" },
-		{ value: "Mobile Makers Academy", data: "23" },
-		{ value: "Product School", data: "24" },
-		{ value: "Thinkful", data: "25" },
-		{ value: "Tradecraft", data: "26" },
-		{ value: "Zipfian Academy", data: "27" },
-	];
-  	$( "#tags" ).autocomplete({
-        source: availableTags
-    });
-});
+// AUTOCOMPLETE
+function search(ele) {
+    if(event.keyCode == 13) {
+        if(ele.value === "academy x"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/5";
+        }
+        else if(ele.value.toLowerCase() === "anyone can learn to code"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/6";
+        }
+        else if(ele.value.toLowerCase() === "app academy"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/7"; 
+        }
+        else if(ele.value.toLowerCase() === "apprentice.io"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/8"; 
+        }
+        else if(ele.value.toLowerCase() === "big nerd ranch"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/9"; 
+        }
+        else if(ele.value.toLowerCase() === "codepath"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/10"; 
+        }
+        else if(ele.value.toLowerCase() === "coder camps"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/11"; 
+        }
+        else if(ele.value.toLowerCase() === "codestream labs"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/12"; 
+        }
+        else if(ele.value.toLowerCase() === "codify academy"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/13"; 
+        }
+        else if(ele.value.toLowerCase() === "coding dojo"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/14"; 
+        }
+        else if(ele.value.toLowerCase() === "dev bootcamp"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/15"; 
+        }
+        else if(ele.value.toLowerCase() === "fire bootcamp"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/16"; 
+        }
+        else if(ele.value.toLowerCase() === "galvanize"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/17"; 
+        }
+        else if(ele.value.toLowerCase() === "general assembly"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/3"; 
+        }
+        else if(ele.value.toLowerCase() === "hack reactor"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/4"; 
+        }
+        else if(ele.value.toLowerCase() === "hackbright academy"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/18"; 
+        }
+        else if(ele.value.toLowerCase() === "hacker coding academy"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/19"; 
+        }
+        else if(ele.value.toLowerCase() === "hackership san francisco"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/20"; 
+        }
+        else if(ele.value.toLowerCase() === "learntech labs"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/21"; 
+        }
+        else if(ele.value.toLowerCase() === "make school"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/22"; 
+        }
+        else if(ele.value.toLowerCase() === "makersquare"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/23"; 
+        }
+        else if(ele.value.toLowerCase() === "metis"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/24"; 
+        }
+        else if(ele.value.toLowerCase() === "mobile makers academy"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/25"; 
+        }
+        else if(ele.value.toLowerCase() === "product school"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/26"; 
+        }
+        else if(ele.value.toLowerCase() === "thinkful"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/27"; 
+        }
+        else if(ele.value.toLowerCase() === "tradecraft"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/28"; 
+        }
+        else if(ele.value.toLowerCase() === "zipfian academy"){
+        	window.location = "http://coding-bootcamp-reviews.herokuapp.com/bootcamps/29"; 
+        }     
+        else {
+        	
+        }
+    }
+}
 
 
 // <%= link_to "Academy X", bootcamps_path(3) %>
-// setup autocomplete function pulling from currencies[] array
-// $('#autocomplete').autocomplete({
-//   lookup: currencies,
-//   onSelect: function (suggestion) {
-//     location.href = "http://www.suggestion.com/test";
-//   }
-// });
 
 
 function goBack() {
@@ -110,11 +156,13 @@ function goBack() {
 }
 
 
+// SUBMITING REVIEWS
 function scrollToAnchor(aid) {
 	var aTag = $("a[name='"+ aid + "']");
 	$('html,body').animate({
 		scrollTop: aTag.offset().top},2000);
 }
+
 
 function submitReview() {
 	$('#review-submit').click(function () {
