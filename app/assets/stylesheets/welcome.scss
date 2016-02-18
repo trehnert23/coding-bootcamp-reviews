@@ -1,62 +1,28 @@
 /*---------------------------------------------*/
                     /*searchbar*/
 /*---------------------------------------------*/
-.autocomplete-suggestions { 
-  border: 1px solid #999; 
-  background: #fff; 
-  cursor: default; 
-  overflow: auto; 
+
+.search {
+  font-family: Dosis;
+  font-size: 40px;
+  text-align: center;
+  width: 460px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  background: white;
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
 }
 
-.autocomplete-suggestion { 
-  padding: 10px 5px; 
-  font-size: 1.2em; 
-  white-space: nowrap; 
-  overflow: hidden; 
+input::-webkit-input-placeholder {
+color: grey !important;
 }
 
-.autocomplete-selected { 
-  background: #f0f0f0; 
-}
 
-.autocomplete-suggestions strong { 
-  font-weight: normal; 
-  color: #3399ff; 
-}
-
-#searchfield { 
-  display: block; 
-  width: 100%; 
-  text-align: center; 
-  margin-bottom: 35px; 
-}
- 
-#searchfield form {
-  display: inline-block;
-  background: #eeefed;
-  padding: 0;
-  margin: 0;
-  padding: 5px;
-  border-radius: 3px;
-  margin: 5px 0 0 0;
-}
-#searchfield form .biginput {
-  width: 600px;
-  height: 40px;
-  padding: 0 10px 0 10px;
-  background-color: #fff;
-  border: 1px solid #c8c8c8;
-  border-radius: 3px;
-  color: #aeaeae;
-  font-weight:normal;
-  font-size: 1.5em;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-#searchfield form .biginput:focus {
-  color: #858585;
-}
 
 /*---------------------------------------------*/
                     /*navbar*/
@@ -120,6 +86,7 @@
     z-index: -9999;
     margin-top: 50px;
     background-image: url('https://images.unsplash.com/7/Top_view.jpg?q=80&fm=jpg&s=4afed7e6e559be491437a10cec9120a8');
+    background-repeat: no-repeat;
     height: 100vh;
     position: absolute;
     width: 100%;
@@ -368,10 +335,12 @@
 @media screen and (min-width: 376px) {
     /*----- Menu Outline -----*/
     .dropdown_header {
-      white-space: nowrap;
-      font-size: 30px;
+      /*white-space: nowrap;*/
+      font-size: 35px;
       font-family: Dosis;
       text-align: center;
+      width: 430px;
+      color: grey;
     }
 
     .dropdown_header:hover {
@@ -546,7 +515,7 @@
 
     .sf_courses2 {
       padding-top: 6%;
-      font-family: arial rounded mt bold;
+      font-family: Dosis;
       text-align: center;
       color: white;
       font-size: 35px;
@@ -559,7 +528,8 @@
     .course_logo_div2 {
       background-color: #8E8E8E;
       width: 100%;
-      height: 100%;
+      height: 350%;
+      margin-top: 200px;
       position: relative;
       z-index: 1;
     }
@@ -576,7 +546,7 @@
     }
 
     .course_table2 {
-      margin-left: 15%;
+      width: 100%;
       border-collapse: collapse;
     }
 
