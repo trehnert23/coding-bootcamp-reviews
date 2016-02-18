@@ -61,4 +61,6 @@ class Bootcamp < ActiveRecord::Base
 		  end
 		end
 	end
+
+
 end
