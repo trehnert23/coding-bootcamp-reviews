@@ -9,7 +9,7 @@
   <div class="row">
     <a name="reviews"></a>
 
-      <h1>Reviews Test</h1>
+      <h1>All Reviews</h1>
 
       <% @reviews.each do |review| %>
 
@@ -18,9 +18,8 @@
           <ul style="list-style:none;">
             <!-- <li class="user-photo"><img src="http://2016rotarypresidentialconferencemanila.org/wp-content/uploads/2015/05/user-icon-silhouette.png"></li> -->
             
-            <li><%= @date = review.created_at %>
-              <% @date.strftime("%B %e, %Y") %>
-              <% @date.strftime("%B #{@date.day.ordinalize}, %Y")%></li>
+            <li><%= review.user.username unless review.user.blank? %></li>
+            <li><%= review.created_at.to_formatted_s(:long_ordinal) %></li>
           </ul>
         </div>
         <div class="col-lg-9 col-md-9 col-xs-12">
@@ -35,7 +34,7 @@
           </div>
 
           <div class="col-lg-12 col-md-9 col-xs-12 review">
-           <p><%= review.content %></p>
+            <p><%= review.content %></p>
             <h5 class="more"><a href="/bootcamp_review/<%= review.id %>" class="button" data-no-turbolink="true">Read More...</a></h5>
           </div>
         </div>

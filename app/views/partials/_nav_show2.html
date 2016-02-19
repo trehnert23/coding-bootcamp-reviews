@@ -1,0 +1,26 @@
+<nav class="navbar navbar-inverse bootcamp_nav navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <ul class="home_brand">
+        <a class="navbar-brand bootcamp_brand" href="/">Coding Bootcamp Reviews</a>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul id="navbar-ul" class="nav navbar-nav home_nav_button navbar-right">
+          <% if current_user%>
+            <li><button class="back_button" onclick="goBack()">Back</button></li>
+            <li><a href="/users/<%= current_user.id %>" type="button">Profile</a></li>
+            <li><%= link_to "Logout", sessions_path , {method: :delete} %></li>
+          <% else %>
+            <li><a data-toggle="modal" href="#signup-modal">Sign Up</a></li>
+            <li><a data-toggle="modal" href="#login-modal">Login</a></li>
+          <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -14,9 +14,8 @@
 						<div class="col-lg-12 col-sm-12" id="review">
 							<div class="col-lg-3 col-md-3 col-xs-12 user-review-info">
 								<ul style="list-style:none;">
-									<li class="user-photo"><img src="http://2016rotarypresidentialconferencemanila.org/wp-content/uploads/2015/05/user-icon-silhouette.png"></li>
 									<li> <%= User.find_by_id(review.user_id).username %></li>
-									<li><%= review.created_at %></li>
+						            <li><%= review.created_at.to_formatted_s(:long_ordinal) %></li>
 								</ul>
 							</div>
 							<div class="col-lg-9 col-md-9 col-xs-12">
@@ -62,4 +61,7 @@
 </div>
 
 <%= render "partials/footer_show" %>
+
+
+
 
