@@ -14,6 +14,10 @@ class Bootcamp < ActiveRecord::Base
 
 	private
 
+	def to_param 
+		
+	end
+
 	def calculate_review_averages
 		calculate_review_totals
 		@review_count = bootcamp_reviews.count
