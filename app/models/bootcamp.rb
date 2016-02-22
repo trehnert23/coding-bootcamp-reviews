@@ -14,8 +14,12 @@ class Bootcamp < ActiveRecord::Base
 
 	private
 
+	def slug
+		name.downcase.gsub(" ", "-")
+	end
+
 	def to_param 
-		
+		"#{id}-#{name}"
 	end
 
 	def calculate_review_averages
