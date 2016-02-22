@@ -19,7 +19,8 @@
 					<div class="col-lg-3 col-md-3 col-xs-12 user-review-info">
 						<ul class="user-info-text" style="list-style:none;">
 							<!-- <li class="user-photo"><img src="http://2016rotarypresidentialconferencemanila.org/wp-content/uploads/2015/05/user-icon-silhouette.png"></li> -->
-							<li><%= review.created_at.to_formatted_s(:long_ordinal) %></li>
+							<li> <%= review.user.username %></li>
+							<li> <%= review.created_at.to_formatted_s(:long_ordinal) %> </li>
 						</ul>
 					</div>
 					<div class="col-lg-9 col-md-9 col-xs-12">
